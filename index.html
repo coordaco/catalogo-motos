@@ -16,7 +16,7 @@
 }
 body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--black); }
 
-/* HERO */
+/* HERO 
 .hero { background: var(--black); padding: 2rem 1.25rem 2.5rem; text-align: center; position: relative; }
 .hero::after { content:''; position:absolute; bottom:0; left:0; right:0; height:4px; background:var(--red); }
 .hero-logo { display:flex; align-items:center; justify-content:center; gap:10px; margin-bottom:1.25rem; }
@@ -27,6 +27,25 @@ body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--
 .hero-btns { display:flex; gap:8px; justify-content:center; }
 .btn-wpp-hero { display:inline-flex; align-items:center; gap:8px; background:var(--wpp); color:#fff; font-weight:600; font-size:0.875rem; padding:11px 20px; border-radius:4px; text-decoration:none; }
 .btn-wpp-hero svg { width:18px; height:18px; }
+* /
+
+/* HERO REFINADO E CINEMATOGRÁFICO */
+.hero { background: linear-gradient(135deg, #111 0%, #1a1a1a 100%); padding: 3rem 1.25rem 2.5rem; text-align: center; position: relative; border-bottom: 4px solid var(--red); overflow: hidden; }
+.hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at top center, rgba(204,0,0,0.18) 0%, transparent 60%); pointer-events: none; }
+.hero-profile { position: relative; display: inline-block; margin-bottom: 1.2rem; }
+.profile-img { width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 3px solid var(--red); box-shadow: 0 8px 25px rgba(204,0,0,0.35); background: #333; position: relative; z-index: 2; }
+.honda-badge { position: absolute; bottom: 2px; right: -5px; background: var(--red); color: white; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-family: Arial, sans-serif; font-size: 16px; border: 3px solid #1a1a1a; z-index: 3; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+.hero-name { font-size: 1.8rem; font-weight: 800; color: var(--white); letter-spacing: -0.5px; margin-bottom: 4px; position: relative; z-index: 2; }
+.hero-name span { color: var(--red); }
+.hero-sub { font-size: 0.8rem; font-weight: 600; color: #a0a0a0; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 1rem; position: relative; z-index: 2; }
+.hero-desc { color: #d0d0d0; font-size: 0.95rem; max-width: 450px; margin: 0 auto 1.8rem; line-height: 1.6; font-weight: 400; position: relative; z-index: 2; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+.hero-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; position: relative; z-index: 2; }
+.btn-wpp-hero, .btn-insta-hero { display: inline-flex; align-items: center; justify-content: center; gap: 8px; color: #fff; font-weight: 600; font-size: 0.9rem; padding: 12px 24px; border-radius: 50px; text-decoration: none; transition: all 0.3s ease; flex: 1; min-width: 140px; max-width: 200px; }
+.btn-wpp-hero { background: var(--wpp); box-shadow: 0 4px 15px rgba(37,211,102,0.25); }
+.btn-wpp-hero:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(37,211,102,0.4); background: #20b858; }
+.btn-insta-hero { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); box-shadow: 0 4px 15px rgba(220,39,67,0.25); }
+.btn-insta-hero:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(220,39,67,0.4); }
+.btn-wpp-hero svg, .btn-insta-hero svg { width: 18px; height: 18px; fill: currentColor; }  
 
 /* SECTION */
 .section-header { display:flex; align-items:center; gap:12px; padding:1.75rem 1.25rem 0; margin-bottom:1rem; }
@@ -156,25 +175,31 @@ footer strong { color:var(--red); }
 <body>
 
 <header class="hero">
-  <div class="hero-logo">
-    <svg width="32" height="20" viewBox="0 0 50 30" fill="none">
-      <rect width="50" height="30" rx="3" fill="#CC0000"/>
-      <text x="25" y="21" font-family="Arial" font-size="18" font-weight="900" fill="white" text-anchor="middle">H</text>
-    </svg>
-    <div>
-      <div class="hero-name">Amanda <span>Rosada</span></div>
-      <div class="hero-sub">Consultora Winner Honda · Limeira – SP</div>
-    </div>
+  <div class="hero-profile">
+    <img src="https://via.placeholder.com/150/333333/FFFFFF?text=FOTO" alt="Amanda Rosada" class="profile-img" onerror="this.src='https://via.placeholder.com/150/333333/FFFFFF?text=FOTO'">
+    <div class="honda-badge">H</div>
   </div>
-  <p class="hero-desc">Conectando você à sua próxima moto<br>com as melhores condições!</p>
+  
+  <div class="hero-name">Amanda <span>Rosada</span></div>
+  <div class="hero-sub">Consultora Winner Honda · Limeira – SP</div>
+  
+  <p class="hero-desc">
+    Seu sonho da moto zero começa aqui. Atendimento exclusivo, aprovação facilitada e as melhores condições de Limeira e região.
+  </p>
+  
   <div class="hero-btns">
-    <a href="https://wa.me/5519978211008?text=Ol%C3%A1%20Amanda%2C%20vi%20seu%20portf%C3%B3lio%20e%20tenho%20interesse%20em%20uma%20moto%20Honda!" class="btn-wpp-hero" target="_blank">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.134.558 4.133 1.535 5.868L.057 23.997l6.306-1.454A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.896 0-3.67-.52-5.193-1.428l-.371-.22-3.744.863.946-3.65-.242-.378A9.964 9.964 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-      Fale comigo
+    <a href="https://wa.me/5519978211008?text=Ol%C3%A1%20Amanda%2C%20vi%20seu%20portf%C3%B3lio%20e%20quero%20realizar%20meu%20sonho%20da%20moto%20nova!" class="btn-wpp-hero" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.134.558 4.133 1.535 5.868L.057 23.997l6.306-1.454A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.896 0-3.67-.52-5.193-1.428l-.371-.22-3.744.863.946-3.65-.242-.378A9.964 9.964 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      WhatsApp
+    </a>
+    
+    <a href="https://instagram.com/amanda_winnerhonda" class="btn-insta-hero" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      Instagram
     </a>
   </div>
 </header>
-
+  
 <div style="padding-top:1.5rem">
   <div class="section-header">
     <div class="section-line"></div>
