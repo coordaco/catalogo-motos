@@ -16,19 +16,6 @@
 }
 body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--black); }
 
-/* HERO 
-.hero { background: var(--black); padding: 2rem 1.25rem 2.5rem; text-align: center; position: relative; }
-.hero::after { content:''; position:absolute; bottom:0; left:0; right:0; height:4px; background:var(--red); }
-.hero-logo { display:flex; align-items:center; justify-content:center; gap:10px; margin-bottom:1.25rem; }
-.hero-name { font-size:1.4rem; font-weight:700; color:var(--white); }
-.hero-name span { color:var(--red); }
-.hero-sub { font-size:0.75rem; color:#888; margin-top:2px; }
-.hero-desc { color:#aaa; font-size:0.875rem; margin-bottom:1.5rem; line-height:1.55; }
-.hero-btns { display:flex; gap:8px; justify-content:center; }
-.btn-wpp-hero { display:inline-flex; align-items:center; gap:8px; background:var(--wpp); color:#fff; font-weight:600; font-size:0.875rem; padding:11px 20px; border-radius:4px; text-decoration:none; }
-.btn-wpp-hero svg { width:18px; height:18px; }
-*/
-
 /* HERO REFINADO */
 .hero { background: linear-gradient(135deg, #111 0%, #1a1a1a 100%); padding: 3rem 1.25rem 2.5rem; text-align: center; position: relative; border-bottom: 4px solid var(--red); overflow: hidden; }
 .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at top center, rgba(204,0,0,0.18) 0%, transparent 60%); pointer-events: none; }
@@ -58,20 +45,6 @@ body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--
 .cat-tab { flex-shrink:0; background:none; border:1.5px solid var(--gray-border); border-radius:20px; padding:6px 14px; font-family:'Inter',sans-serif; font-size:0.78rem; font-weight:500; color:var(--gray-text); cursor:pointer; white-space:nowrap; transition:all .15s; }
 .cat-tab.active { background:var(--red); border-color:var(--red); color:#fff; }
 
-/* GRID 
-.motos-grid { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--gray-border); border-top:1px solid var(--gray-border); border-bottom:1px solid var(--gray-border); }
-.moto-card { background:var(--white); padding:1.1rem 1rem 1rem; cursor:pointer; }
-.lancamento-badge { display:inline-block; background:var(--red); color:#fff; font-size:9px; font-weight:700; letter-spacing:1px; text-transform:uppercase; padding:3px 8px; border-radius:2px; margin-bottom:5px; }
-.moto-name { font-size:0.875rem; font-weight:700; color:var(--black); line-height:1.2; margin-bottom:2px; }
-.moto-tipo { font-size:0.7rem; color:var(--gray-text); margin-bottom:0.6rem; }
-.moto-img-wrap { width:100%; height:95px; display:flex; align-items:center; justify-content:center; margin-bottom:0.65rem; }
-.moto-img-wrap img { max-width:100%; max-height:90px; object-fit:contain; }
-.moto-price-label { font-size:0.68rem; color:var(--gray-text); }
-.moto-price { font-size:1.05rem; font-weight:700; color:var(--red); margin-bottom:1px; }
-.moto-price-note { font-size:0.62rem; color:var(--gray-text); line-height:1.4; margin-bottom:0.65rem; }
-.btn-ver { display:block; width:100%; background:var(--red); color:#fff; border:none; border-radius:3px; padding:9px; font-family:'Inter',sans-serif; font-size:0.75rem; font-weight:600; cursor:pointer; }
-*/
-
 /* GRID */
 .motos-grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap:1px; background:var(--gray-border); border-top:1px solid var(--gray-border); border-bottom:1px solid var(--gray-border); }
 .moto-card { background:var(--white); padding:1.2rem 1rem 1rem; cursor:pointer; display: flex; flex-direction: column; transition: background 0.2s; }
@@ -92,7 +65,7 @@ body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--
 .btn-ver { display:block; width:100%; background:var(--red); color:#fff; border:none; border-radius:4px; padding:10px; font-family:'Inter',sans-serif; font-size:0.75rem; font-weight:600; cursor:pointer; transition: background 0.2s; }
 .btn-ver:hover { background: var(--red-dark); }
 
-/* Ajuste de Lentes para Monitores e Tablets (O Segredo do Tamanho) */
+/* Ajuste de Lentes para Monitores e Tablets */
 @media (min-width: 768px) {
     .motos-grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
     .moto-img-wrap { height: 200px; margin-bottom: 1.2rem; }
