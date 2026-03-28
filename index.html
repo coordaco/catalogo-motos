@@ -29,7 +29,7 @@ body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--
 .btn-wpp-hero svg { width:18px; height:18px; }
 * /
 
-/* HERO REFINADO E CINEMATOGRÁFICO */
+/* HERO REFINADO */
 .hero { background: linear-gradient(135deg, #111 0%, #1a1a1a 100%); padding: 3rem 1.25rem 2.5rem; text-align: center; position: relative; border-bottom: 4px solid var(--red); overflow: hidden; }
 .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at top center, rgba(204,0,0,0.18) 0%, transparent 60%); pointer-events: none; }
 .hero-profile { position: relative; display: inline-block; margin-bottom: 1.2rem; }
@@ -170,11 +170,20 @@ footer p { color:#777; font-size:0.75rem; line-height:1.6; }
 footer strong { color:var(--red); }
 .footer-wpp { display:inline-flex; align-items:center; gap:6px; color:var(--wpp); text-decoration:none; font-weight:600; font-size:0.82rem; margin-top:8px; }
 .footer-wpp svg { width:15px; height:15px; }
+
+/* O SELO DA CONCESSIONÁRIA */
+.winner-logo { position: absolute; top: 22px; right: 22px; max-width: 120px; z-index: 10; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4)); transition: transform 0.3s ease; }
+.winner-logo:hover { transform: scale(1.05); }
+@media (max-width: 480px) { .winner-logo { max-width: 90px; top: 15px; right: 15px; } }
+
 </style>
 </head>
 <body>
 
 <header class="hero">
+  
+  <img src="winner.png" alt="Winner Honda" class="winner-logo">
+  
   <div class="hero-profile">
     <img src="https://via.placeholder.com/150/333333/FFFFFF?text=FOTO" alt="Amanda Rosada" class="profile-img" onerror="this.src='https://via.placeholder.com/150/333333/FFFFFF?text=FOTO'">
     <div class="honda-badge">H</div>
