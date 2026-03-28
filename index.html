@@ -39,7 +39,7 @@ body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--
 .cat-tab { flex-shrink:0; background:none; border:1.5px solid var(--gray-border); border-radius:20px; padding:6px 14px; font-family:'Inter',sans-serif; font-size:0.78rem; font-weight:500; color:var(--gray-text); cursor:pointer; white-space:nowrap; transition:all .15s; }
 .cat-tab.active { background:var(--red); border-color:var(--red); color:#fff; }
 
-/* GRID */
+/* GRID 
 .motos-grid { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--gray-border); border-top:1px solid var(--gray-border); border-bottom:1px solid var(--gray-border); }
 .moto-card { background:var(--white); padding:1.1rem 1rem 1rem; cursor:pointer; }
 .lancamento-badge { display:inline-block; background:var(--red); color:#fff; font-size:9px; font-weight:700; letter-spacing:1px; text-transform:uppercase; padding:3px 8px; border-radius:2px; margin-bottom:5px; }
@@ -51,7 +51,37 @@ body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--
 .moto-price { font-size:1.05rem; font-weight:700; color:var(--red); margin-bottom:1px; }
 .moto-price-note { font-size:0.62rem; color:var(--gray-text); line-height:1.4; margin-bottom:0.65rem; }
 .btn-ver { display:block; width:100%; background:var(--red); color:#fff; border:none; border-radius:3px; padding:9px; font-family:'Inter',sans-serif; font-size:0.75rem; font-weight:600; cursor:pointer; }
+*/
 
+/* GRID */
+.motos-grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap:1px; background:var(--gray-border); border-top:1px solid var(--gray-border); border-bottom:1px solid var(--gray-border); }
+.moto-card { background:var(--white); padding:1.2rem 1rem 1rem; cursor:pointer; display: flex; flex-direction: column; transition: background 0.2s; }
+.moto-card:hover { background: #fafafa; }
+.lancamento-badge { display:inline-block; background:var(--red); color:#fff; font-size:9px; font-weight:700; letter-spacing:1px; text-transform:uppercase; padding:3px 8px; border-radius:2px; margin-bottom:5px; align-self: flex-start; }
+.moto-name { font-size:0.9rem; font-weight:700; color:var(--black); line-height:1.2; margin-bottom:2px; }
+.moto-tipo { font-size:0.7rem; color:var(--gray-text); margin-bottom:0.6rem; }
+
+/* O Pedestal das Motos */
+.moto-img-wrap { width:100%; height:130px; display:flex; align-items:center; justify-content:center; margin-bottom:0.8rem; }
+.moto-img-wrap img { max-width:100%; max-height:120px; object-fit:contain; transition: transform 0.3s ease; }
+/* O reflexo da vitrine: Efeito de aproximação ao passar o mouse */
+.moto-card:hover .moto-img-wrap img { transform: scale(1.12); filter: drop-shadow(0 8px 12px rgba(0,0,0,0.12)); }
+
+.moto-price-label { font-size:0.68rem; color:var(--gray-text); margin-top: auto; }
+.moto-price { font-size:1.1rem; font-weight:700; color:var(--red); margin-bottom:1px; }
+.moto-price-note { font-size:0.62rem; color:var(--gray-text); line-height:1.4; margin-bottom:0.8rem; }
+.btn-ver { display:block; width:100%; background:var(--red); color:#fff; border:none; border-radius:4px; padding:10px; font-family:'Inter',sans-serif; font-size:0.75rem; font-weight:600; cursor:pointer; transition: background 0.2s; }
+.btn-ver:hover { background: var(--red-dark); }
+
+/* Ajuste de Lentes para Monitores e Tablets (O Segredo do Tamanho) */
+@media (min-width: 768px) {
+    .motos-grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+    .moto-img-wrap { height: 200px; margin-bottom: 1.2rem; }
+    .moto-img-wrap img { max-height: 180px; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.08)); }
+    .moto-name { font-size: 1.15rem; }
+    .moto-price { font-size: 1.3rem; }
+}
+  
 /* MODAL */
 .modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,.55); z-index:100; align-items:flex-end; }
 .modal-overlay.active { display:flex; }
