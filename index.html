@@ -16,38 +16,25 @@
 }
 body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--black); }
 
-/* HERO 
-.hero { background: var(--black); padding: 2rem 1.25rem 2.5rem; text-align: center; position: relative; }
-.hero::after { content:''; position:absolute; bottom:0; left:0; right:0; height:4px; background:var(--red); }
-.hero-logo { display:flex; align-items:center; justify-content:center; gap:10px; margin-bottom:1.25rem; }
-.hero-name { font-size:1.4rem; font-weight:700; color:var(--white); }
-.hero-name span { color:var(--red); }
-.hero-sub { font-size:0.75rem; color:#888; margin-top:2px; }
-.hero-desc { color:#aaa; font-size:0.875rem; margin-bottom:1.5rem; line-height:1.55; }
-.hero-btns { display:flex; gap:8px; justify-content:center; }
-.btn-wpp-hero { display:inline-flex; align-items:center; gap:8px; background:var(--wpp); color:#fff; font-weight:600; font-size:0.875rem; padding:11px 20px; border-radius:4px; text-decoration:none; }
-.btn-wpp-hero svg { width:18px; height:18px; }
-*/
-
-/* HERO REFINADO */
+/* HERO */
 .hero { background: linear-gradient(135deg, #111 0%, #1a1a1a 100%); padding: 3rem 1.25rem 2.5rem; text-align: center; position: relative; border-bottom: 4px solid var(--red); overflow: hidden; }
 .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at top center, rgba(204,0,0,0.18) 0%, transparent 60%); pointer-events: none; }
+.winner-logo { position: absolute; top: 22px; right: 22px; max-width: 120px; z-index: 10; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4)); }
+@media (max-width: 480px) { .winner-logo { max-width: 85px; top: 14px; right: 14px; } }
 .hero-profile { position: relative; display: inline-block; margin-bottom: 1.2rem; }
 .profile-img { width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 3px solid var(--red); box-shadow: 0 8px 25px rgba(204,0,0,0.35); background: #333; position: relative; z-index: 2; }
-.honda-badge { position: absolute; bottom: 2px; right: -5px; background: var(--red); color: white; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-family: Arial, sans-serif; font-size: 16px; border: 3px solid #1a1a1a; z-index: 3; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+.honda-badge { position: absolute; bottom: 2px; right: -5px; background: var(--red); color: white; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-family: Arial, sans-serif; font-size: 16px; border: 3px solid #1a1a1a; z-index: 3; }
 .hero-name { font-size: 1.8rem; font-weight: 800; color: var(--white); letter-spacing: -0.5px; margin-bottom: 4px; position: relative; z-index: 2; }
 .hero-name span { color: var(--red); }
 .hero-sub { font-size: 0.8rem; font-weight: 600; color: #a0a0a0; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 1rem; position: relative; z-index: 2; }
-.hero-desc { color: #d0d0d0; font-size: 0.95rem; max-width: 450px; margin: 0 auto 1.8rem; line-height: 1.6; font-weight: 400; position: relative; z-index: 2; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+.hero-desc { color: #d0d0d0; font-size: 0.95rem; max-width: 450px; margin: 0 auto 1.8rem; line-height: 1.6; position: relative; z-index: 2; }
 .hero-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; position: relative; z-index: 2; }
-.btn-wpp-hero, .btn-insta-hero { display: inline-flex; align-items: center; justify-content: center; gap: 8px; color: #fff; font-weight: 600; font-size: 0.9rem; padding: 12px 24px; border-radius: 50px; text-decoration: none; transition: all 0.3s ease; flex: 1; min-width: 140px; max-width: 200px; }
-.btn-wpp-hero { background: var(--wpp); box-shadow: 0 4px 15px rgba(37,211,102,0.25); }
-.btn-wpp-hero:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(37,211,102,0.4); background: #20b858; }
-.btn-insta-hero { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); box-shadow: 0 4px 15px rgba(220,39,67,0.25); }
-.btn-insta-hero:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(220,39,67,0.4); }
-.btn-wpp-hero svg, .btn-insta-hero svg { width: 18px; height: 18px; fill: currentColor; }  
+.btn-wpp-hero, .btn-insta-hero { display: inline-flex; align-items: center; justify-content: center; gap: 8px; color: #fff; font-weight: 600; font-size: 0.9rem; padding: 12px 24px; border-radius: 50px; text-decoration: none; flex: 1; min-width: 140px; max-width: 200px; }
+.btn-wpp-hero { background: var(--wpp); }
+.btn-insta-hero { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+.btn-wpp-hero svg, .btn-insta-hero svg { width: 18px; height: 18px; fill: currentColor; }
 
-/* SECTION */
+/* SECTION HEADER */
 .section-header { display:flex; align-items:center; gap:12px; padding:1.75rem 1.25rem 0; margin-bottom:1rem; }
 .section-header h2 { font-size:1.1rem; font-weight:700; white-space:nowrap; }
 .section-line { flex:1; height:1px; background:var(--gray-border); }
@@ -58,49 +45,26 @@ body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--
 .cat-tab { flex-shrink:0; background:none; border:1.5px solid var(--gray-border); border-radius:20px; padding:6px 14px; font-family:'Inter',sans-serif; font-size:0.78rem; font-weight:500; color:var(--gray-text); cursor:pointer; white-space:nowrap; transition:all .15s; }
 .cat-tab.active { background:var(--red); border-color:var(--red); color:#fff; }
 
-/* GRID 
-.motos-grid { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--gray-border); border-top:1px solid var(--gray-border); border-bottom:1px solid var(--gray-border); }
-.moto-card { background:var(--white); padding:1.1rem 1rem 1rem; cursor:pointer; }
-.lancamento-badge { display:inline-block; background:var(--red); color:#fff; font-size:9px; font-weight:700; letter-spacing:1px; text-transform:uppercase; padding:3px 8px; border-radius:2px; margin-bottom:5px; }
-.moto-name { font-size:0.875rem; font-weight:700; color:var(--black); line-height:1.2; margin-bottom:2px; }
-.moto-tipo { font-size:0.7rem; color:var(--gray-text); margin-bottom:0.6rem; }
-.moto-img-wrap { width:100%; height:95px; display:flex; align-items:center; justify-content:center; margin-bottom:0.65rem; }
-.moto-img-wrap img { max-width:100%; max-height:90px; object-fit:contain; }
-.moto-price-label { font-size:0.68rem; color:var(--gray-text); }
-.moto-price { font-size:1.05rem; font-weight:700; color:var(--red); margin-bottom:1px; }
-.moto-price-note { font-size:0.62rem; color:var(--gray-text); line-height:1.4; margin-bottom:0.65rem; }
-.btn-ver { display:block; width:100%; background:var(--red); color:#fff; border:none; border-radius:3px; padding:9px; font-family:'Inter',sans-serif; font-size:0.75rem; font-weight:600; cursor:pointer; }
-*/
-
 /* GRID */
 .motos-grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap:1px; background:var(--gray-border); border-top:1px solid var(--gray-border); border-bottom:1px solid var(--gray-border); }
-.moto-card { background:var(--white); padding:1.2rem 1rem 1rem; cursor:pointer; display: flex; flex-direction: column; transition: background 0.2s; }
-.moto-card:hover { background: #fafafa; }
-.lancamento-badge { display:inline-block; background:var(--red); color:#fff; font-size:9px; font-weight:700; letter-spacing:1px; text-transform:uppercase; padding:3px 8px; border-radius:2px; margin-bottom:5px; align-self: flex-start; }
+.moto-card { background:var(--white); padding:1.2rem 1rem 1rem; cursor:pointer; display:flex; flex-direction:column; transition:background 0.2s; }
+.moto-card:hover { background:#fafafa; }
+.lancamento-badge { display:inline-block; background:var(--red); color:#fff; font-size:9px; font-weight:700; letter-spacing:1px; text-transform:uppercase; padding:3px 8px; border-radius:2px; margin-bottom:5px; align-self:flex-start; }
+.spacer-badge { height:20px; }
 .moto-name { font-size:0.9rem; font-weight:700; color:var(--black); line-height:1.2; margin-bottom:2px; }
 .moto-tipo { font-size:0.7rem; color:var(--gray-text); margin-bottom:0.6rem; }
-
-/* O Pedestal das Motos */
 .moto-img-wrap { width:100%; height:130px; display:flex; align-items:center; justify-content:center; margin-bottom:0.8rem; }
-.moto-img-wrap img { max-width:100%; max-height:120px; object-fit:contain; transition: transform 0.3s ease; }
-/* O reflexo da vitrine: Efeito de aproximação ao passar o mouse */
-.moto-card:hover .moto-img-wrap img { transform: scale(1.12); filter: drop-shadow(0 8px 12px rgba(0,0,0,0.12)); }
-
-.moto-price-label { font-size:0.68rem; color:var(--gray-text); margin-top: auto; }
-.moto-price { font-size:1.1rem; font-weight:700; color:var(--red); margin-bottom:1px; }
-.moto-price-note { font-size:0.62rem; color:var(--gray-text); line-height:1.4; margin-bottom:0.8rem; }
-.btn-ver { display:block; width:100%; background:var(--red); color:#fff; border:none; border-radius:4px; padding:10px; font-family:'Inter',sans-serif; font-size:0.75rem; font-weight:600; cursor:pointer; transition: background 0.2s; }
-.btn-ver:hover { background: var(--red-dark); }
-
-/* Ajuste de Lentes para Monitores e Tablets (O Segredo do Tamanho) */
+.moto-img-wrap img { max-width:100%; max-height:120px; object-fit:contain; transition:transform 0.3s ease; }
+.moto-card:hover .moto-img-wrap img { transform:scale(1.12); filter:drop-shadow(0 8px 12px rgba(0,0,0,0.12)); }
+.btn-ver { display:block; width:100%; background:var(--red); color:#fff; border:none; border-radius:4px; padding:10px; font-family:'Inter',sans-serif; font-size:0.75rem; font-weight:600; cursor:pointer; margin-top:auto; transition:background 0.2s; }
+.btn-ver:hover { background:var(--red-dark); }
 @media (min-width: 768px) {
-    .motos-grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
-    .moto-img-wrap { height: 200px; margin-bottom: 1.2rem; }
-    .moto-img-wrap img { max-height: 180px; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.08)); }
-    .moto-name { font-size: 1.15rem; }
-    .moto-price { font-size: 1.3rem; }
+  .motos-grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+  .moto-img-wrap { height:200px; margin-bottom:1.2rem; }
+  .moto-img-wrap img { max-height:180px; filter:drop-shadow(0 4px 8px rgba(0,0,0,0.08)); }
+  .moto-name { font-size:1.15rem; }
 }
-  
+
 /* MODAL */
 .modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,.55); z-index:100; align-items:flex-end; }
 .modal-overlay.active { display:flex; }
@@ -113,8 +77,8 @@ body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--
 
 /* GALLERY */
 .modal-gallery { padding:1.25rem 1.25rem 0; }
-.modal-main-img { background:var(--gray-bg); display:flex; align-items:center; justify-content:center; height:190px; margin-bottom:10px; }
-.modal-main-img img { max-height:175px; max-width:100%; object-fit:contain; }
+.modal-main-img { background:var(--gray-bg); display:flex; align-items:center; justify-content:center; height:200px; margin-bottom:10px; cursor:zoom-in; }
+.modal-main-img img { max-height:185px; max-width:100%; object-fit:contain; }
 .modal-colors { display:flex; gap:8px; overflow-x:auto; scrollbar-width:none; }
 .modal-colors::-webkit-scrollbar { display:none; }
 .color-opt { flex-shrink:0; display:flex; flex-direction:column; align-items:center; gap:3px; cursor:pointer; }
@@ -122,14 +86,8 @@ body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--
 .color-opt.active img { border-color:var(--red); }
 .color-opt span { font-size:9px; color:var(--gray-text); text-align:center; max-width:70px; line-height:1.2; }
 
-/* PRICE */
-.price-box { padding:1rem 1.25rem; display:flex; align-items:center; justify-content:space-between; border-top:1px solid var(--gray-border); }
-.price-label { font-size:0.72rem; color:var(--gray-text); }
-.price-val { font-size:1.45rem; font-weight:700; color:var(--red); }
-.price-note { font-size:0.62rem; color:var(--gray-text); }
-
 /* SPEC TABS */
-.modal-section { padding:0 1.25rem; }
+.modal-section { padding:1rem 1.25rem 0; }
 .spec-tabs { display:flex; border-bottom:1px solid var(--gray-border); overflow-x:auto; scrollbar-width:none; }
 .spec-tabs::-webkit-scrollbar { display:none; }
 .spec-tab { flex-shrink:0; padding:10px 13px; font-family:'Inter',sans-serif; font-size:0.75rem; font-weight:600; color:var(--gray-text); background:none; border:none; border-bottom:2px solid transparent; cursor:pointer; white-space:nowrap; transition:all .15s; }
@@ -153,7 +111,7 @@ body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--
 .pay-card-title svg { width:16px; height:16px; fill:var(--red); flex-shrink:0; }
 .pay-arrow { color:var(--gray-text); font-size:0.7rem; transition:transform .2s; }
 .pay-card.open .pay-arrow { transform:rotate(180deg); }
-.pay-card-body { display:none; padding:0 14px 12px; font-size:0.8rem; color:var(--gray-text); line-height:1.65; border-top:1px solid var(--gray-border); padding-top:10px; }
+.pay-card-body { display:none; padding:10px 14px 12px; font-size:0.8rem; color:var(--gray-text); line-height:1.65; border-top:1px solid var(--gray-border); }
 .pay-card.open .pay-card-body { display:block; }
 .pay-card-body ul { padding-left:1rem; margin-top:6px; }
 .pay-card-body ul li { margin-bottom:3px; }
@@ -162,7 +120,13 @@ body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--
 .modal-cta { padding:1rem 1.25rem 2rem; display:flex; flex-direction:column; gap:8px; }
 .btn-wpp-modal { display:flex; align-items:center; justify-content:center; gap:8px; background:var(--wpp); color:#fff; border:none; border-radius:4px; padding:14px; font-family:'Inter',sans-serif; font-size:0.9rem; font-weight:600; cursor:pointer; text-decoration:none; }
 .btn-wpp-modal svg { width:19px; height:19px; }
-.btn-honda-site { display:flex; align-items:center; justify-content:center; background:none; border:1.5px solid var(--gray-border); border-radius:4px; padding:11px; font-family:'Inter',sans-serif; font-size:0.8rem; font-weight:500; color:var(--gray-text); text-decoration:none; }
+.btn-winner-site { display:flex; align-items:center; justify-content:center; background:none; border:1.5px solid var(--gray-border); border-radius:4px; padding:11px; font-family:'Inter',sans-serif; font-size:0.8rem; font-weight:500; color:var(--gray-text); text-decoration:none; }
+
+/* ZOOM */
+.zoom-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.92); z-index:9999; align-items:center; justify-content:center; cursor:zoom-out; }
+.zoom-overlay.active { display:flex; }
+.zoom-overlay img { max-width:95%; max-height:95%; object-fit:contain; filter:drop-shadow(0 10px 25px rgba(0,0,0,0.5)); }
+.zoom-close { position:absolute; top:20px; right:25px; color:#fff; font-size:28px; cursor:pointer; font-weight:bold; padding:10px; z-index:10000; }
 
 /* FOOTER */
 footer { background:var(--black); padding:1.5rem 1.25rem; text-align:center; }
@@ -170,53 +134,31 @@ footer p { color:#777; font-size:0.75rem; line-height:1.6; }
 footer strong { color:var(--red); }
 .footer-wpp { display:inline-flex; align-items:center; gap:6px; color:var(--wpp); text-decoration:none; font-weight:600; font-size:0.82rem; margin-top:8px; }
 .footer-wpp svg { width:15px; height:15px; }
-
-/* O SELO DA CONCESSIONÁRIA */
-.winner-logo { position: absolute; top: 22px; right: 22px; max-width: 120px; z-index: 10; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4)); transition: transform 0.3s ease; }
-.winner-logo:hover { transform: scale(1.05); }
-@media (max-width: 480px) { .winner-logo { max-width: 90px; top: 15px; right: 15px; } }
-
-/* LENTE DE AUMENTO (ZOOM) */
-.modal-main-img img { cursor: zoom-in; }
-.zoom-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 9999; align-items: center; justify-content: center; cursor: zoom-out; opacity: 0; transition: opacity 0.3s ease; backdrop-filter: blur(4px); }
-.zoom-overlay.active { display: flex; opacity: 1; }
-.zoom-overlay img { max-width: 95%; max-height: 95%; object-fit: contain; transform: scale(0.8); transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-.zoom-overlay.active img { transform: scale(1); filter: drop-shadow(0 10px 25px rgba(0,0,0,0.5)); }
-.zoom-close { position: absolute; top: 20px; right: 25px; color: #fff; font-size: 28px; cursor: pointer; font-weight: bold; padding: 10px; z-index: 10000; }
-  
 </style>
 </head>
 <body>
 
 <header class="hero">
-  
   <img src="winner.png" alt="Winner Honda" class="winner-logo">
-  
   <div class="hero-profile">
-    <img src="https://via.placeholder.com/150/333333/FFFFFF?text=FOTO" alt="Amanda Rosada" class="profile-img" onerror="this.src='https://via.placeholder.com/150/333333/FFFFFF?text=FOTO'">
+    <img src="foto-amanda.jpg" alt="Amanda Rosada" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Amanda+Rosada&background=CC0000&color=fff&size=150'">
     <div class="honda-badge">H</div>
   </div>
-  
   <div class="hero-name">Amanda <span>Rosada</span></div>
   <div class="hero-sub">Consultora Winner Honda · Limeira – SP</div>
-  
-  <p class="hero-desc">
-    Seu sonho da moto zero começa aqui. Atendimento exclusivo, aprovação facilitada e as melhores condições de Limeira e região.
-  </p>
-  
+  <p class="hero-desc">Seu sonho da moto zero começa aqui. Atendimento exclusivo, aprovação facilitada e as melhores condições de Limeira e região.</p>
   <div class="hero-btns">
     <a href="https://wa.me/5519978211008?text=Ol%C3%A1%20Amanda%2C%20vi%20seu%20portf%C3%B3lio%20e%20quero%20realizar%20meu%20sonho%20da%20moto%20nova!" class="btn-wpp-hero" target="_blank">
       <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.134.558 4.133 1.535 5.868L.057 23.997l6.306-1.454A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.896 0-3.67-.52-5.193-1.428l-.371-.22-3.744.863.946-3.65-.242-.378A9.964 9.964 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
       WhatsApp
     </a>
-    
     <a href="https://instagram.com/amanda_winnerhonda" class="btn-insta-hero" target="_blank">
       <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
       Instagram
     </a>
   </div>
 </header>
-  
+
 <div style="padding-top:1.5rem">
   <div class="section-header">
     <div class="section-line"></div>
@@ -229,6 +171,8 @@ footer strong { color:var(--red); }
     <button class="cat-tab" onclick="filterCat('Scooter',this)">Scooter</button>
     <button class="cat-tab" onclick="filterCat('Naked',this)">Naked</button>
     <button class="cat-tab" onclick="filterCat('Trail',this)">Trail</button>
+    <button class="cat-tab" onclick="filterCat('Adventure',this)">Adventure</button>
+    <button class="cat-tab" onclick="filterCat('Off Road',this)">Off Road</button>
   </div>
   <div class="motos-grid" id="motosGrid"></div>
 </div>
@@ -252,15 +196,8 @@ footer strong { color:var(--red); }
       <button class="modal-close" onclick="closeModal()">✕</button>
     </div>
     <div class="modal-gallery">
-      <div class="modal-main-img"><img id="mMainImg" src="" alt="" onclick="openZoom()"></div>
+      <div class="modal-main-img" onclick="openZoom()"><img id="mMainImg" src="" alt=""></div>
       <div class="modal-colors" id="mColors"></div>
-    </div>
-    <div class="price-box">
-      <div>
-        <div class="price-label">A partir de</div>
-        <div class="price-val" id="mPrice"></div>
-        <div class="price-note">*Preço público sugerido. Frete não incluso.</div>
-      </div>
     </div>
     <div class="modal-section">
       <div class="spec-tabs" id="specTabs"></div>
@@ -295,81 +232,287 @@ footer strong { color:var(--red); }
     <div class="modal-cta">
       <a id="mWppBtn" href="#" class="btn-wpp-modal" target="_blank">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.134.558 4.133 1.535 5.868L.057 23.997l6.306-1.454A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.896 0-3.67-.52-5.193-1.428l-.371-.22-3.744.863.946-3.65-.242-.378A9.964 9.964 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-        Tenho interesse — Falar com Amanda
+        Consultar preço e condições — Amanda
       </a>
-      <a id="mHondaBtn" href="#" class="btn-honda-site" target="_blank">Ver no site oficial da Honda ↗</a>
+      <a id="mWinnerBtn" href="#" class="btn-winner-site" target="_blank">Ver na Winner Honda ↗</a>
     </div>
   </div>
 </div>
 
 <div class="zoom-overlay" id="zoomOverlay" onclick="closeZoom()">
   <span class="zoom-close">✕</span>
-  <img id="zoomImg" src="" alt="Moto em Detalhes">
+  <img id="zoomImg" src="" alt="">
 </div>
-  
+
 <script>
 const WPP="5519978211008";
+const HB="https://www.honda.com.br/motos/sites/hda/files/";
+const WH="https://www.winnerhonda.com.br/zero-km/";
+
 const motos=[
-  {nome:"Pop 110i ES",tipo:"City",lancamento:false,preco:"R$ 10.380*",
-   img:'https://www.honda.com.br/motos/sites/hda/files/2024-06/imagem-home-moto-pop-110i-es-branco-ross-white-lateral_1.webp',
-   url:"https://www.honda.com.br/motos/street/city/pop-110i-es",
-   cores:[{nome:"Branco - Ross White",img:'https://www.honda.com.br/motos/sites/hda/files/2024-06/imagem-home-moto-pop-110i-es-branco-ross-white-lateral_1.webp'},{nome:"Vermelho - Fighting Red",img:'https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-Home-Pop-110i-Es-Vermelho-Fighting-Red_0.webp'},{nome:"Preto Black",img:'https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-Home-Pop-110i-Es-Preto-Black_0.webp'}],
-   fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","109,5 cc"],["Diâmetro x Curso","47,0 x 63,1 mm"],["Potência Máxima","8,43 cv a 7.250 rpm"],["Torque Máximo","0,945 kgf.m a 5.000 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","4 marchas – Semiautomática"],["Partida","Elétrica"]],"Capacidade":[["Tanque","4,2 litros (≈1,0 l reserva)"],["Óleo do motor","1,0 litro"]],"Dimensões":[["Comprimento","1.870 mm"],["Largura","685 mm"],["Altura do assento","745 mm"],["Peso seco","87 kg"],["Distância entre eixos","1.195 mm"]],"Ciclística":[["Freio dianteiro","Disco hidráulico – CBS"],["Freio traseiro","Tambor – CBS"],["Suspensão dianteira","Telescópica"],["Suspensão traseira","Mono Shock"],["Pneu dianteiro","60/100-17"],["Pneu traseiro","80/100-14"]]}},
-  {nome:"Biz 125",tipo:"City",lancamento:false,preco:"R$ 13.240*",
-   img:"https://www.honda.com.br/motos/sites/hda/files/2025-10/imagem-home-honda-biz-125-es-lateral-vermelho_0.webp",
-   url:"https://www.honda.com.br/motos/street/city/biz-125",
-   cores:[{nome:"Vermelho - Maceio Red",img:"https://www.honda.com.br/motos/sites/hda/files/2025-10/imagem-home-honda-biz-125-es-lateral-vermelho_0.webp"},{nome:"Branco - Ross White",img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-Home-Honda-Biz-125-ES-Branco-Ross-White_0.webp"},{nome:"Preto Black",img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-Home-Honda-Biz-125-ES-Preto-Black_0.webp"}],
-   fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","124,7 cc"],["Potência Máxima","9,7 cv a 7.500 rpm"],["Torque Máximo","1,05 kgf.m a 5.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","4 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","5,3 litros"],["Óleo do motor","1,0 litro"]],"Dimensões":[["Comprimento","1.918 mm"],["Largura","713 mm"],["Altura do assento","768 mm"],["Peso seco","105 kg"]],"Ciclística":[["Freio dianteiro","Disco hidráulico – CBS"],["Freio traseiro","Tambor – CBS"],["Suspensão dianteira","Telescópica"],["Suspensão traseira","Mono Shock"],["Pneu dianteiro","70/90-17"],["Pneu traseiro","80/90-17"]]}},
-  {nome:"CG 160 Start",tipo:"City",lancamento:false,preco:"R$ 17.110*",
-   img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-home-visao-da-lateral-direita-da-honda-cg-160-start.webp",
-   url:"https://www.honda.com.br/motos/street/city/cg-160-start",
-   cores:[{nome:"Azul Perolizado - Pearl Spencer Blue",img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-home-visao-da-lateral-direita-da-honda-cg-160-start.webp"},{nome:"Vermelho Perolizado - Pearl Marrakesh Red",img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-Home-Honda-CG-160-Start-Vermelho-Perolizado_0.webp"},{nome:"Preto - Black",img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-Home-Honda-CG-160-Start-Preto.webp"}],
-   fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","11,7 cv a 7.500 rpm"],["Torque Máximo","1,33 kgf.m a 5.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","5 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","14 litros"],["Óleo do motor","1,2 litro"]],"Dimensões":[["Comprimento","2.039 mm"],["Largura","756 mm"],["Altura do assento","793 mm"],["Peso seco","140 kg"]],"Ciclística":[["Freio dianteiro","Disco hidráulico – CBS"],["Freio traseiro","Tambor – CBS"],["Suspensão dianteira","Telescópica"],["Suspensão traseira","Mono Shock"]]}},
-  {nome:"CG 160 Fan",tipo:"City",lancamento:false,preco:"R$ 18.720*",
-   img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-Home-Honda-CG-160-Fan-Prata-Met%C3%A1lico.webp",
-   url:"https://www.honda.com.br/motos/street/city/cg-160-fan",
-   cores:[{nome:"Prata Metálico - Iron Nail Silver Metallic",img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-Home-Honda-CG-160-Fan-Prata-Met%C3%A1lico.webp"},{nome:"Vermelho Perolizado - Pearl Marrakesh Red",img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-Home-Honda-CG-160-Fan-Vermelho-Perolizado.webp"},{nome:"Preto Metálico - Infinite Black Metallic",img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-Home-Honda-CG-160-Fan-Preto-Met%C3%A1lico.webp"}],
-   fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","12,3 cv a 8.000 rpm"],["Torque Máximo","1,38 kgf.m a 5.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","5 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","14 litros"],["Óleo do motor","1,2 litro"]],"Dimensões":[["Comprimento","2.039 mm"],["Largura","756 mm"],["Altura do assento","793 mm"],["Peso seco","141 kg"]],"Ciclística":[["Freio dianteiro","Disco hidráulico – CBS"],["Freio traseiro","Tambor – CBS"],["Suspensão dianteira","Telescópica"],["Suspensão traseira","Mono Shock"]]}},
-  {nome:"CG 160 Titan",tipo:"City",lancamento:false,preco:"R$ 20.310*",
-   img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-Home-Honda-CG-160-Titan-Cinza-Met%C3%A1lico.webp",
-   url:"https://www.honda.com.br/motos/street/city/cg-160-titan",
-   cores:[{nome:"Cinza Metálico - Pearl Stark Gray",img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-Home-Honda-CG-160-Titan-Cinza-Met%C3%A1lico.webp"},{nome:"Vermelho Metálico - Pearl Royalty Red",img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-Home-Honda-CG-160-Titan-Vermelho-Met%C3%A1lico.webp"},{nome:"Preto Metálico - Infinite Black Metallic",img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-Home-Honda-CG-160-Titan-Preto-Met%C3%A1lico.webp"}],
-   fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","12,4 cv a 8.000 rpm"],["Torque Máximo","1,39 kgf.m a 6.000 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","5 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","14 litros"],["Óleo do motor","1,2 litro"]],"Dimensões":[["Comprimento","2.039 mm"],["Largura","756 mm"],["Altura do assento","793 mm"],["Peso seco","142 kg"]],"Ciclística":[["Freio dianteiro","Disco hidráulico – ABS"],["Freio traseiro","Disco hidráulico"],["Suspensão dianteira","Telescópica"],["Suspensão traseira","Mono Shock"]]}},
-  {nome:"CG 50 Anos",tipo:"City",lancamento:true,preco:"R$ 20.976*",
-   img:"https://www.honda.com.br/motos/sites/hda/files/2026-02/Moto-cg-vis%C3%A3o-lateral-direita.webp",
-   url:"https://www.honda.com.br/motos/street/city/cg-50-anos",
-   cores:[{nome:"Edição Especial 50 Anos",img:"https://www.honda.com.br/motos/sites/hda/files/2026-02/Moto-cg-vis%C3%A3o-lateral-direita.webp"}],
-   fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","12,4 cv a 8.000 rpm"],["Torque Máximo","1,39 kgf.m a 6.000 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","5 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","14 litros"]],"Dimensões":[["Altura do assento","793 mm"],["Peso seco","142 kg"]],"Ciclística":[["Freio dianteiro","Disco hidráulico – ABS"],["Freio traseiro","Disco hidráulico"],["Suspensão dianteira","Telescópica"],["Suspensão traseira","Mono Shock"]]}},
-  {nome:"Elite 125",tipo:"Scooter",lancamento:false,preco:"R$ 14.300*",
-   img:"https://www.honda.com.br/motos/sites/hda/files/2026-02/scooter-honda-roxa-vista-lateral.webp",
-   url:"https://www.honda.com.br/motos/street/scooter/elite-125",
-   cores:[{nome:"Roxo Fosco - Mat Midnight Purple",img:"https://www.honda.com.br/motos/sites/hda/files/2026-02/scooter-honda-roxa-vista-lateral.webp"},{nome:"Vermelho Metálico - Pearl Royalty Red",img:"https://www.honda.com.br/motos/sites/hda/files/2026-02/Scooter%20Honda%20vermelha%20vis%C3%A3o%20lateral_0.webp"},{nome:"Cinza Metálico - Mat Cynos Gray Metallic",img:"https://www.honda.com.br/motos/sites/hda/files/2026-02/scooter%20honda%20cinza%20perolizado%20vista%20lateral.webp"},{nome:"Cinza Perolizado – Pearl Stark Gray",img:"https://www.honda.com.br/motos/sites/hda/files/2026-02/scooter%20honda%20cinza%20met%C3%A1lico%20vista%20lateral.webp"}],
-   fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","124,9 cc"],["Potência Máxima","8,7 cv a 7.500 rpm"],["Torque Máximo","0,97 kgf.m a 5.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","Automática (CVT)"],["Partida","Elétrica"]],"Capacidade":[["Tanque","6 litros"],["Porta-objetos","18 litros"]],"Dimensões":[["Comprimento","1.905 mm"],["Largura","675 mm"],["Altura do assento","760 mm"],["Peso seco","116 kg"]],"Ciclística":[["Freio dianteiro","Disco hidráulico – CBS"],["Freio traseiro","Tambor – CBS"],["Suspensão dianteira","Telescópica"],["Suspensão traseira","Mono Shock"],["Pneu dianteiro","90/90-12"],["Pneu traseiro","100/90-10"]]}},
-  {nome:"PCX",tipo:"Scooter",lancamento:false,preco:"R$ 18.710*",
-   img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/imagem-home-honda-pcx-branco_0.webp",
-   url:"https://www.honda.com.br/motos/street/scooter/pcx",
-   cores:[{nome:"Branco Perolizado – Pearl Hakuji White",img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/imagem-home-honda-pcx-branco_0.webp"}],
-   fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","156,9 cc"],["Potência Máxima","13,0 cv a 8.500 rpm"],["Torque Máximo","1,4 kgf.m a 5.000 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","Automática (CVT)"],["Partida","Elétrica"]],"Capacidade":[["Tanque","8,1 litros"],["Porta-objetos","25 litros (2 capacetes)"],["USB","Sim"]],"Dimensões":[["Comprimento","1.930 mm"],["Largura","740 mm"],["Altura do assento","764 mm"],["Peso seco","132 kg"]],"Ciclística":[["Freio dianteiro","Disco 220mm – CBS"],["Freio traseiro","Disco 190mm – CBS"],["Suspensão dianteira","Telescópica"],["Suspensão traseira","Mono Shock"]]}},
-  {nome:"Honda ADV",tipo:"Scooter",lancamento:false,preco:"R$ 25.520*",
-   img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-home-Honda-ADV-Vermelha-Lateral_0.webp",
-   url:"https://www.honda.com.br/motos/adventure/scooter/honda-adv",
-   cores:[{nome:"Vermelho Perolizado - Pearl Siena Red",img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-home-Honda-ADV-Vermelha-Lateral_0.webp"},{nome:"Prata Metálico - Iron Nail Silver Metallic",img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-Home-Honda-ADV-Prata-Met%C3%A1lico_0.webp"}],
-   fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","156,9 cc"],["Potência Máxima","13,0 cv a 8.500 rpm"],["Torque Máximo","1,4 kgf.m a 5.000 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","Automática (CVT)"],["Partida","Elétrica"]],"Capacidade":[["Tanque","8,1 litros"],["Porta-objetos","21 litros"],["USB","Sim"]],"Dimensões":[["Comprimento","1.990 mm"],["Largura","790 mm"],["Altura do assento","795 mm"],["Peso seco","135 kg"]],"Ciclística":[["Freio dianteiro","Disco 240mm – ABS"],["Freio traseiro","Disco 220mm – ABS"],["Suspensão dianteira","Telescópica"],["Suspensão traseira","Mono Shock"]]}},
-  {nome:"CB 300F Twister",tipo:"Naked",lancamento:false,preco:"R$ 25.150*",
-   img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-home-honda-Twister-CBS-Vermelha-Lateral.webp",
-   url:"https://www.honda.com.br/motos/street/naked/cb-300f-twister",
-   cores:[{nome:"Vermelho Metálico - Pearl Royalty Red",img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-home-honda-Twister-CBS-Vermelha-Lateral.webp"},{nome:"Cinza Metálico - Mat Cynos Gray Metallic",img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-home-honda-Twister-CBS-Cinza-Lateral.webp"}],
-   fichas:{"Motor":[["Tipo","SOHC, Monocilíndrico, 4 válvulas, arrefecido a ar"],["Cilindrada","293,5 cc"],["Potência Máxima","24,7 cv a 7.500 rpm"],["Torque Máximo","2,67 kgf.m a 5.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","6 marchas – Embreagem deslizante assistida"],["Partida","Elétrica"]],"Capacidade":[["Tanque","13 litros"],["Óleo do motor","1,6 litro"]],"Dimensões":[["Comprimento","2.010 mm"],["Largura","725 mm"],["Altura do assento","800 mm"],["Peso seco","151 kg"]],"Ciclística":[["Freio dianteiro","Disco 296mm – ABS (versão ABS)"],["Freio traseiro","Disco 220mm – CBS"],["Suspensão dianteira","Telescópica invertida"],["Suspensão traseira","Mono Shock"],["Pneu dianteiro","110/70-17"],["Pneu traseiro","150/60-17"]]}},
-  {nome:"NXR 160 Bros",tipo:"Trail",lancamento:false,preco:"R$ 21.960*",
-   img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-Home-Honda-NXR-160-Bros-CBS-Vermelha-Fighting-Red.webp",
-   url:"https://www.honda.com.br/motos/adventure/trail/nxr-160-bros",
-   cores:[{nome:"Vermelho - Fighting Red",img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-Home-Honda-NXR-160-Bros-CBS-Vermelha-Fighting-Red.webp"},{nome:"Azul - Universe Blue",img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-Home-Honda-NXR-160-Bros-CBS-Azul-Universe-Blue.webp"}],
-   fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","14,3 cv a 8.000 rpm"],["Torque Máximo","1,45 kgf.m a 6.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","5 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","12 litros"],["Óleo do motor","1,2 litro"],["USB-C","Sim"]],"Dimensões":[["Comprimento","2.067 mm"],["Largura","810 mm"],["Altura do assento","836 mm"],["Peso seco","125 kg"],["Clearance","247 mm"]],"Ciclística":[["Freio dianteiro","Disco 240mm – ABS (versão ABS)"],["Freio traseiro","Disco 220mm"],["Suspensão dianteira","Garfo telescópico 33mm – 180mm curso"],["Suspensão traseira","Mono Shock"],["Pneu dianteiro","90/90-19"],["Pneu traseiro","110/90-17"]]}},
-  {nome:"XRE 300 Sahara",tipo:"Trail",lancamento:false,preco:"R$ 30.990*",
-   img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-Home-Sahara-300-Cinza-Met%C3%A1lico.webp",
-   url:"https://www.honda.com.br/motos/adventure/trail/sahara-300",
-   cores:[{nome:"Cinza Metálico",img:"https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-Home-Sahara-300-Cinza-Met%C3%A1lico.webp"}],
-   fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","291,6 cc"],["Potência Máxima","24,3 cv a 8.500 rpm"],["Torque Máximo","2,61 kgf.m a 6.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","6 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","13,7 litros"],["Óleo do motor","2,0 litros"],["USB-C","Sim"]],"Dimensões":[["Comprimento","2.210 mm"],["Largura","845 mm"],["Altura do assento","855 mm"],["Peso seco","160 kg"],["Clearance","260 mm"]],"Ciclística":[["Freio dianteiro","Disco 276mm – ABS"],["Freio traseiro","Disco 220mm – ABS"],["Suspensão dianteira","Telescópica invertida 43mm"],["Suspensão traseira","Mono Shock"],["Pneu dianteiro","100/90-19"],["Pneu traseiro","130/80-17"]]}}
+/* ==================== CITY ==================== */
+{nome:"Pop 110i ES",tipo:"City",lancamento:false,
+ img:HB+"2024-06/imagem-home-moto-pop-110i-es-branco-ross-white-lateral_1.webp",
+ url:WH+"pop-110i-es",
+ cores:[
+  {nome:"Branco - Ross White",img:HB+"2024-06/imagem-home-moto-pop-110i-es-branco-ross-white-lateral_1.webp"},
+  {nome:"Vermelho - Fighting Red",img:HB+"2025-08/Imagem-Home-Pop-110i-Es-Vermelho-Fighting-Red_0.webp"},
+  {nome:"Preto Black",img:HB+"2025-08/Imagem-Home-Pop-110i-Es-Preto-Black_0.webp"}],
+ fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","109,5 cc"],["Diâmetro x Curso","47,0 x 63,1 mm"],["Potência Máxima","8,43 cv a 7.250 rpm"],["Torque Máximo","0,945 kgf.m a 5.000 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","4 marchas – Semiautomática"],["Partida","Elétrica"]],"Capacidade":[["Tanque","4,2 litros (≈1,0 l reserva)"],["Óleo do motor","1,0 litro"]],"Dimensões":[["Comprimento","1.870 mm"],["Altura do assento","745 mm"],["Peso seco","87 kg"],["Distância entre eixos","1.195 mm"]],"Ciclística":[["Freio dianteiro","Disco hidráulico – CBS"],["Freio traseiro","Tambor – CBS"],["Suspensão dianteira","Telescópica"],["Pneu dianteiro","60/100-17"],["Pneu traseiro","80/100-14"]]}},
+
+{nome:"Biz 125",tipo:"City",lancamento:false,
+ img:HB+"2025-10/imagem-home-honda-biz-125-es-lateral-vermelho_0.webp",
+ url:WH+"biz-125",
+ cores:[
+  {nome:"Vermelho - Maceio Red",img:HB+"2025-10/imagem-home-honda-biz-125-es-lateral-vermelho_0.webp"},
+  {nome:"Branco - Ross White",img:HB+"2025-08/Imagem-Home-Honda-Biz-125-ES-Branco-Ross-White_0.webp"},
+  {nome:"Preto Black",img:HB+"2025-08/Imagem-Home-Honda-Biz-125-ES-Preto-Black_0.webp"}],
+ fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","124,7 cc"],["Potência Máxima","9,7 cv a 7.500 rpm"],["Torque Máximo","1,05 kgf.m a 5.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","4 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","5,3 litros"],["Óleo do motor","1,0 litro"]],"Dimensões":[["Comprimento","1.918 mm"],["Largura","713 mm"],["Altura do assento","768 mm"],["Peso seco","105 kg"]],"Ciclística":[["Freio dianteiro","Disco hidráulico – CBS"],["Freio traseiro","Tambor – CBS"],["Pneu dianteiro","70/90-17"],["Pneu traseiro","80/90-17"]]}},
+
+{nome:"CG 160 Start",tipo:"City",lancamento:false,
+ img:HB+"2025-08/Imagem-home-visao-da-lateral-direita-da-honda-cg-160-start.webp",
+ url:WH+"cg-160-start",
+ cores:[
+  {nome:"Azul Perolizado - Pearl Spencer Blue",img:HB+"2025-08/Imagem-home-visao-da-lateral-direita-da-honda-cg-160-start.webp"},
+  {nome:"Vermelho Perolizado - Pearl Marrakesh Red",img:HB+"2025-08/Imagem-Home-Honda-CG-160-Start-Vermelho-Perolizado_0.webp"},
+  {nome:"Preto - Black",img:HB+"2025-08/Imagem-Home-Honda-CG-160-Start-Preto.webp"}],
+ fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","11,7 cv a 7.500 rpm"],["Torque Máximo","1,33 kgf.m a 5.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","5 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","14 litros"],["Óleo do motor","1,2 litro"]],"Dimensões":[["Comprimento","2.039 mm"],["Altura do assento","793 mm"],["Peso seco","140 kg"]],"Ciclística":[["Freio dianteiro","Disco hidráulico – CBS"],["Freio traseiro","Tambor – CBS"],["Suspensão dianteira","Telescópica"],["Suspensão traseira","Mono Shock"]]}},
+
+{nome:"CG 160 Fan",tipo:"City",lancamento:false,
+ img:HB+"2025-08/Imagem-Home-Honda-CG-160-Fan-Prata-Met%C3%A1lico.webp",
+ url:WH+"cg-160-fan",
+ cores:[
+  {nome:"Prata Metálico",img:HB+"2025-08/Imagem-Home-Honda-CG-160-Fan-Prata-Met%C3%A1lico.webp"},
+  {nome:"Vermelho Perolizado",img:HB+"2025-08/Imagem-Home-Honda-CG-160-Fan-Vermelho-Perolizado.webp"},
+  {nome:"Preto Metálico",img:HB+"2025-08/Imagem-Home-Honda-CG-160-Fan-Preto-Met%C3%A1lico.webp"}],
+ fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","12,3 cv a 8.000 rpm"],["Torque Máximo","1,38 kgf.m a 5.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","5 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","14 litros"],["Óleo do motor","1,2 litro"]],"Dimensões":[["Comprimento","2.039 mm"],["Altura do assento","793 mm"],["Peso seco","141 kg"]],"Ciclística":[["Freio dianteiro","Disco hidráulico – CBS"],["Freio traseiro","Tambor – CBS"],["Suspensão dianteira","Telescópica"],["Suspensão traseira","Mono Shock"]]}},
+
+{nome:"CG 160 Titan",tipo:"City",lancamento:false,
+ img:HB+"2025-08/Imagem-Home-Honda-CG-160-Titan-Cinza-Met%C3%A1lico.webp",
+ url:WH+"cg-160-titan",
+ cores:[
+  {nome:"Cinza Metálico - Pearl Stark Gray",img:HB+"2025-08/Imagem-Home-Honda-CG-160-Titan-Cinza-Met%C3%A1lico.webp"},
+  {nome:"Vermelho Metálico - Pearl Royalty Red",img:HB+"2025-08/Imagem-Home-Honda-CG-160-Titan-Vermelho-Met%C3%A1lico.webp"},
+  {nome:"Preto Metálico",img:HB+"2025-08/Imagem-Home-Honda-CG-160-Titan-Preto-Met%C3%A1lico.webp"}],
+ fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","12,4 cv a 8.000 rpm"],["Torque Máximo","1,39 kgf.m a 6.000 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","5 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","14 litros"],["Óleo do motor","1,2 litro"]],"Dimensões":[["Comprimento","2.039 mm"],["Altura do assento","793 mm"],["Peso seco","142 kg"]],"Ciclística":[["Freio dianteiro","Disco hidráulico – ABS"],["Freio traseiro","Disco hidráulico"],["Suspensão dianteira","Telescópica"],["Suspensão traseira","Mono Shock"]]}},
+
+{nome:"CG 160 Cargo",tipo:"City",lancamento:false,
+ img:HB+"2025-08/Imagem-Home-CG%20160-Cargo-Branco_0.webp",
+ url:WH+"cg-160-cargo",
+ cores:[
+  {nome:"Branco Ross White",img:HB+"2025-08/Imagem-Home-CG%20160-Cargo-Branco_0.webp"},
+  {nome:"Prata Metálico",img:HB+"2025-08/Imagem-Home-CG%20160-Cargo-Prata_0.webp"}],
+ fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","12,3 cv a 8.000 rpm"],["Torque Máximo","1,38 kgf.m a 5.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","5 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","14 litros"],["Óleo do motor","1,2 litro"]],"Dimensões":[["Comprimento","2.100 mm"],["Altura do assento","793 mm"],["Peso seco","148 kg"],["Capacidade baú traseiro","Até 30 kg"]],"Ciclística":[["Freio dianteiro","Disco hidráulico – CBS"],["Freio traseiro","Tambor – CBS"],["Suspensão dianteira","Telescópica"],["Suspensão traseira","Mono Shock"]]}},
+
+{nome:"CG 50 Anos",tipo:"City",lancamento:true,
+ img:HB+"2026-02/Moto-cg-vis%C3%A3o-lateral-direita.webp",
+ url:WH+"cg-50-anos",
+ cores:[{nome:"Edição Especial 50 Anos",img:HB+"2026-02/Moto-cg-vis%C3%A3o-lateral-direita.webp"}],
+ fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","12,4 cv a 8.000 rpm"],["Torque Máximo","1,39 kgf.m a 6.000 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","5 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","14 litros"]],"Dimensões":[["Altura do assento","793 mm"],["Peso seco","142 kg"]],"Ciclística":[["Freio dianteiro","Disco hidráulico – ABS"],["Freio traseiro","Disco hidráulico"]]}},
+
+/* ==================== SCOOTER ==================== */
+{nome:"Elite 125",tipo:"Scooter",lancamento:false,
+ img:HB+"2026-02/scooter-honda-roxa-vista-lateral.webp",
+ url:WH+"elite-125",
+ cores:[
+  {nome:"Roxo Fosco - Mat Midnight Purple",img:HB+"2026-02/scooter-honda-roxa-vista-lateral.webp"},
+  {nome:"Vermelho Metálico - Pearl Royalty Red",img:HB+"2026-02/Scooter%20Honda%20vermelha%20vis%C3%A3o%20lateral_0.webp"},
+  {nome:"Cinza Mat - Mat Cynos Gray",img:HB+"2026-02/scooter%20honda%20cinza%20perolizado%20vista%20lateral.webp"},
+  {nome:"Cinza Perolizado - Pearl Stark Gray",img:HB+"2026-02/scooter%20honda%20cinza%20met%C3%A1lico%20vista%20lateral.webp"}],
+ fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","124,9 cc"],["Potência Máxima","8,7 cv a 7.500 rpm"],["Torque Máximo","0,97 kgf.m a 5.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","Automática (CVT)"],["Partida","Elétrica"]],"Capacidade":[["Tanque","6 litros"],["Porta-objetos","18 litros"]],"Dimensões":[["Comprimento","1.905 mm"],["Altura do assento","760 mm"],["Peso seco","116 kg"]],"Ciclística":[["Freio dianteiro","Disco hidráulico – CBS"],["Freio traseiro","Tambor – CBS"],["Pneu dianteiro","90/90-12"],["Pneu traseiro","100/90-10"]]}},
+
+{nome:"PCX CBS",tipo:"Scooter",lancamento:false,
+ img:HB+"2025-08/imagem-home-honda-pcx-branco_0.webp",
+ url:WH+"pcx",
+ cores:[
+  {nome:"Branco Perolizado - Pearl Hakuji White",img:HB+"2025-08/imagem-home-honda-pcx-branco_0.webp"},
+  {nome:"Vermelho Perolizado - Pearl Siena Red",img:HB+"2025-08/imagem-home-honda-pcx-vermelha_0.webp"}],
+ fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","156,9 cc"],["Potência Máxima","16,0 cv a 8.500 rpm"],["Torque Máximo","1,5 kgf.m a 6.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","Automática (CVT)"],["Smart Key","Sim"],["Idling Stop","Sim"],["Partida","Elétrica"]],"Capacidade":[["Tanque","8,1 litros"],["Porta-objetos","30 litros (2 capacetes)"],["Entrada USB-C","Sim"]],"Dimensões":[["Comprimento","1.930 mm"],["Altura do assento","764 mm"],["Peso seco","134 kg"]],"Ciclística":[["Freio dianteiro","Disco 220mm – CBS"],["Freio traseiro","Disco 190mm – CBS"],["Pneu","14 polegadas"]]}},
+
+{nome:"PCX ABS",tipo:"Scooter",lancamento:false,
+ img:HB+"2025-08/visao-da-lateral-direita-da-moto-honda-pcx-preta_0.webp",
+ url:WH+"pcx",
+ cores:[
+  {nome:"Preto Perolizado - Pearl Morion Black",img:HB+"2025-08/visao-da-lateral-direita-da-moto-honda-pcx-preta_0.webp"},
+  {nome:"Cinza Metálico - Mat Cynos Gray",img:HB+"2025-08/visao-da-lateral-direita-da-moto-honda-pcx-cinza_0.webp"},
+  {nome:"Branco Perolizado - Pearl Hakuji White",img:HB+"2025-08/imagem-home-honda-pcx-branco_0.webp"}],
+ fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","156,9 cc"],["Potência Máxima","16,0 cv a 8.500 rpm"],["Torque Máximo","1,5 kgf.m a 6.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","Automática (CVT)"],["Smart Key","Sim"],["Idling Stop","Sim"],["Partida","Elétrica"]],"Capacidade":[["Tanque","8,1 litros"],["Porta-objetos","30 litros (2 capacetes)"],["Entrada USB-C","Sim"]],"Dimensões":[["Comprimento","1.930 mm"],["Altura do assento","764 mm"],["Peso seco","136 kg"]],"Ciclística":[["Freio dianteiro","Disco 220mm – ABS"],["Freio traseiro","Disco 190mm – ABS"],["Controle de tração (HSTC)","Sim"],["Pneu","14 polegadas"]]}},
+
+{nome:"PCX DLX ABS",tipo:"Scooter",lancamento:false,
+ img:HB+"2025-08/visao-da-lateral-direita-da-moto-honda-pcx-dlx_0.webp",
+ url:WH+"pcx",
+ cores:[
+  {nome:"Prata Metálico - Pearl Glare Silver",img:HB+"2025-08/visao-da-lateral-direita-da-moto-honda-pcx-dlx_0.webp"},
+  {nome:"Preto DLX",img:HB+"2025-08/visao-da-lateral-direita-da-moto-honda-pcx-dlx-preta_0.webp"}],
+ fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","156,9 cc"],["Potência Máxima","16,0 cv a 8.500 rpm"],["Transmissão","Automática (CVT)"],["Smart Key","Sim"],["Idling Stop","Sim"]],"Capacidade":[["Tanque","8,1 litros"],["Porta-objetos","30 litros (2 capacetes)"],["Entrada USB-C","Sim"]],"Dimensões":[["Altura do assento","764 mm"],["Peso seco","137 kg"]],"Ciclística":[["Freio dianteiro","Disco 220mm – ABS"],["Freio traseiro","Disco 190mm – ABS"],["Controle de tração (HSTC)","Sim"],["Alarme","Sim"],["Rodas","14 polegadas – Design DLX"]]}},
+
+{nome:"Honda ADV",tipo:"Scooter",lancamento:false,
+ img:HB+"2025-08/Imagem-home-Honda-ADV-Vermelha-Lateral_0.webp",
+ url:WH+"honda-adv",
+ cores:[
+  {nome:"Vermelho Perolizado - Pearl Siena Red",img:HB+"2025-08/Imagem-home-Honda-ADV-Vermelha-Lateral_0.webp"},
+  {nome:"Prata Metálico",img:HB+"2025-08/Imagem-Home-Honda-ADV-Prata-Met%C3%A1lico_0.webp"}],
+ fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","156,9 cc"],["Potência Máxima","13,0 cv a 8.500 rpm"],["Torque Máximo","1,4 kgf.m a 5.000 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","Automática (CVT)"],["Partida","Elétrica"]],"Capacidade":[["Tanque","8,1 litros"],["Porta-objetos","21 litros"],["Entrada USB","Sim"]],"Dimensões":[["Comprimento","1.990 mm"],["Largura","790 mm"],["Altura do assento","795 mm"],["Peso seco","135 kg"]],"Ciclística":[["Freio dianteiro","Disco 240mm – ABS"],["Freio traseiro","Disco 220mm – ABS"]]}},
+
+/* ==================== NAKED ==================== */
+{nome:"CB 300F Twister CBS",tipo:"Naked",lancamento:false,
+ img:HB+"2025-08/Imagem-home-honda-Twister-CBS-Vermelha-Lateral.webp",
+ url:WH+"cb-300f-twister",
+ cores:[
+  {nome:"Vermelho Metálico - Pearl Royalty Red",img:HB+"2025-08/Imagem-home-honda-Twister-CBS-Vermelha-Lateral.webp"},
+  {nome:"Cinza Metálico - Mat Cynos Gray",img:HB+"2025-08/Imagem-home-honda-Twister-CBS-Cinza-Lateral.webp"}],
+ fichas:{"Motor":[["Tipo","SOHC, Monocilíndrico, 4 válvulas, arrefecido a ar"],["Cilindrada","293,5 cc"],["Potência Máxima","24,7 cv a 7.500 rpm"],["Torque Máximo","2,67 kgf.m a 5.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","6 marchas – Embreagem deslizante assistida"],["Partida","Elétrica"]],"Capacidade":[["Tanque","13 litros"],["Óleo do motor","1,6 litro"]],"Dimensões":[["Comprimento","2.010 mm"],["Altura do assento","800 mm"],["Peso seco","151 kg"]],"Ciclística":[["Freio dianteiro","Disco 296mm – CBS"],["Freio traseiro","Disco 220mm – CBS"],["Suspensão dianteira","Telescópica invertida"],["Pneu dianteiro","110/70-17"],["Pneu traseiro","150/60-17"]]}},
+
+{nome:"CB 300F Twister ABS",tipo:"Naked",lancamento:false,
+ img:HB+"2025-08/Imagem-home-honda-Twister-ABS-Azul-Lateral_0.webp",
+ url:WH+"cb-300f-twister",
+ cores:[
+  {nome:"Azul Metálico - Mat Gunpowder Blue",img:HB+"2025-08/Imagem-home-honda-Twister-ABS-Azul-Lateral_0.webp"},
+  {nome:"Vermelho Metálico",img:HB+"2025-08/Imagem-home-honda-Twister-ABS-Vermelho-Lateral_0.webp"}],
+ fichas:{"Motor":[["Tipo","SOHC, Monocilíndrico, 4 válvulas, arrefecido a ar"],["Cilindrada","293,5 cc"],["Potência Máxima","24,7 cv a 7.500 rpm"],["Torque Máximo","2,67 kgf.m a 5.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","6 marchas – Embreagem deslizante assistida"],["Partida","Elétrica"]],"Capacidade":[["Tanque","13 litros"],["Óleo do motor","1,6 litro"]],"Dimensões":[["Comprimento","2.010 mm"],["Altura do assento","800 mm"],["Peso seco","153 kg"]],"Ciclística":[["Freio dianteiro","Disco 296mm – ABS"],["Freio traseiro","Disco 220mm – CBS"],["Suspensão dianteira","Telescópica invertida"],["Pneu dianteiro","110/70-17"],["Pneu traseiro","150/60-17"]]}},
+
+{nome:"CB 500 Hornet",tipo:"Naked",lancamento:true,
+ img:HB+"2025-08/Imagem-home-honda-Hornet500-Vermelha-Lateral.webp",
+ url:WH+"cb-500-hornet",
+ cores:[
+  {nome:"Vermelho Perolizado",img:HB+"2025-08/Imagem-home-honda-Hornet500-Vermelha-Lateral.webp"},
+  {nome:"Branco Perolizado",img:HB+"2025-08/Imagem-home-honda-Hornet500-Branca-Lateral_0.webp"},
+  {nome:"Preto",img:HB+"2025-08/Imagem-home-honda-Hornet500-Preta-Lateral_0.webp"}],
+ fichas:{"Motor":[["Tipo","Bicilíndrico em linha, DOHC, arrefecido a água"],["Cilindrada","471 cc"],["Potência Máxima","50,2 cv a 9.500 rpm"],["Torque Máximo","4,56 kgf.m a 7.750 rpm"],["Transmissão","6 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","15,2 litros"]],"Dimensões":[["Altura do assento","826 mm"],["Peso seco","196 kg"]],"Ciclística":[["Freio dianteiro","Disco – ABS Cornering"],["Freio traseiro","Disco – ABS"],["Suspensão dianteira","Telescópica invertida Showa SFF-BP 41mm"],["Modos de pilotagem","Sport, Standard, Rain, User"],["Controle de tração","Sim"],["Painel","TFT 5 polegadas"]]}},
+
+{nome:"CB 650R E-Clutch",tipo:"Naked",lancamento:true,
+ img:HB+"2025-08/Imagem-Home-da-Moto-Honda-CB-650R-Vermelho-Perolizado_0.webp",
+ url:WH+"cb-650r",
+ cores:[
+  {nome:"Vermelho Perolizado",img:HB+"2025-08/Imagem-Home-da-Moto-Honda-CB-650R-Vermelho-Perolizado_0.webp"},
+  {nome:"Preto Metálico",img:HB+"2025-08/Imagem-Home-da-Moto-Honda-CB-650R-Preto_0.webp"}],
+ fichas:{"Motor":[["Tipo","Inline-4, DOHC, arrefecido a água"],["Cilindrada","648,7 cc"],["Potência Máxima","95 cv a 12.000 rpm"],["Torque Máximo","6,50 kgf.m a 8.000 rpm"],["Transmissão","6 marchas + E-Clutch (embreagem automática)"],["Partida","Elétrica"]],"Capacidade":[["Tanque","15,4 litros"]],"Dimensões":[["Altura do assento","810 mm"],["Peso seco","202 kg"]],"Ciclística":[["Freio dianteiro","Disco Dual – ABS"],["Freio traseiro","Disco – ABS"],["Suspensão dianteira","Telescópica invertida"],["E-Clutch","Troca de marchas sem embreagem manual"],["Controle de tração","Sim"],["Painel","TFT"]]}},
+
+{nome:"CB 750 Hornet",tipo:"Naked",lancamento:true,
+ img:HB+"2025-10/360-site-16fr_MLBF_Hornet75000_4.webp",
+ url:WH+"cb-750-hornet",
+ cores:[
+  {nome:"Cinza Mat",img:HB+"2025-10/360-site-16fr_MLBF_Hornet75000_4.webp"},
+  {nome:"Vermelho Metálico",img:HB+"2025-08/Imagem-home-honda-Hornet750-Vermelha-Lateral_0.webp"},
+  {nome:"Preto Metálico",img:HB+"2025-08/Imagem-home-honda-Hornet750-Preta-Lateral_0.webp"}],
+ fichas:{"Motor":[["Tipo","Bicilíndrico em linha, DOHC, arrefecido a água"],["Cilindrada","755 cc"],["Potência Máxima","91 cv a 9.500 rpm"],["Torque Máximo","75 Nm a 7.250 rpm"],["Transmissão","6 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","15,4 litros"]],"Dimensões":[["Altura do assento","795 mm"],["Peso seco","202 kg"]],"Ciclística":[["Freio dianteiro","Disco Dual – ABS Cornering"],["Freio traseiro","Disco – ABS"],["Suspensão dianteira","Telescópica invertida"],["Controle de tração HSTC","3 níveis + desligável"],["Modos de pilotagem","Sport, Standard, Rain, User"],["Painel","TFT 5 polegadas – RoadSync"]]}},
+
+/* ==================== TRAIL ==================== */
+{nome:"NXR 160 Bros CBS",tipo:"Trail",lancamento:false,
+ img:HB+"2025-08/Imagem-Home-Honda-NXR-160-Bros-CBS-Vermelha-Fighting-Red.webp",
+ url:WH+"nxr-160-bros",
+ cores:[
+  {nome:"Vermelho - Fighting Red",img:HB+"2025-08/Imagem-Home-Honda-NXR-160-Bros-CBS-Vermelha-Fighting-Red.webp"},
+  {nome:"Azul - Universe Blue",img:HB+"2025-08/Imagem-Home-Honda-NXR-160-Bros-CBS-Azul-Universe-Blue.webp"}],
+ fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","14,3 cv a 8.000 rpm"],["Torque Máximo","1,45 kgf.m a 6.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","5 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","12 litros"],["Óleo do motor","1,2 litro"],["USB-C","Sim"]],"Dimensões":[["Comprimento","2.067 mm"],["Altura do assento","836 mm"],["Peso seco","125 kg"],["Clearance","247 mm"]],"Ciclística":[["Freio dianteiro","Disco 240mm – CBS"],["Freio traseiro","Disco 220mm – CBS"],["Suspensão dianteira","Garfo telescópico 33mm – 180mm"],["Pneu dianteiro","90/90-19"],["Pneu traseiro","110/90-17"]]}},
+
+{nome:"NXR 160 Bros ABS",tipo:"Trail",lancamento:false,
+ img:HB+"2025-08/Imagem-Home-Honda-NXR-160-Bros-ABS-Cinza-Tempestade-Gray_0.webp",
+ url:WH+"nxr-160-bros",
+ cores:[
+  {nome:"Cinza Tempestade",img:HB+"2025-08/Imagem-Home-Honda-NXR-160-Bros-ABS-Cinza-Tempestade-Gray_0.webp"},
+  {nome:"Vermelho - Fighting Red",img:HB+"2025-08/Imagem-Home-Honda-NXR-160-Bros-ABS-Vermelho_0.webp"}],
+ fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","14,3 cv a 8.000 rpm"],["Torque Máximo","1,45 kgf.m a 6.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","5 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","12 litros"],["Óleo do motor","1,2 litro"],["USB-C","Sim"]],"Dimensões":[["Comprimento","2.067 mm"],["Altura do assento","836 mm"],["Peso seco","127 kg"],["Clearance","247 mm"]],"Ciclística":[["Freio dianteiro","Disco 240mm – ABS"],["Freio traseiro","Disco 220mm"],["Suspensão dianteira","Garfo telescópico 33mm – 180mm"],["Pneu dianteiro","90/90-19"],["Pneu traseiro","110/90-17"]]}},
+
+{nome:"XRE 190",tipo:"Trail",lancamento:false,
+ img:HB+"2025-08/imagem-home-honda-xre-190-lateral-cinza_0.webp",
+ url:WH+"xre-190",
+ cores:[
+  {nome:"Cinza Metálico",img:HB+"2025-08/imagem-home-honda-xre-190-lateral-cinza_0.webp"},
+  {nome:"Vermelho Fighting Red",img:HB+"2025-08/imagem-home-honda-xre-190-lateral-vermelho_0.webp"}],
+ fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","184,4 cc"],["Potência Máxima","18,6 cv a 8.500 rpm"],["Torque Máximo","1,73 kgf.m a 6.000 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","5 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","14 litros"],["Óleo do motor","1,2 litro"]],"Dimensões":[["Comprimento","2.100 mm"],["Altura do assento","830 mm"],["Peso seco","134 kg"],["Clearance","250 mm"]],"Ciclística":[["Freio dianteiro","Disco 240mm – CBS"],["Freio traseiro","Tambor"],["Suspensão dianteira","Telescópica 33mm"],["Pneu dianteiro","90/90-21"],["Pneu traseiro","120/80-18"]]}},
+
+{nome:"XRE 300 Sahara",tipo:"Trail",lancamento:false,
+ img:HB+"2025-08/Imagem-Home-Sahara-300-Cinza-Met%C3%A1lico.webp",
+ url:WH+"sahara-300",
+ cores:[
+  {nome:"Cinza Metálico",img:HB+"2025-08/Imagem-Home-Sahara-300-Cinza-Met%C3%A1lico.webp"},
+  {nome:"Bege Metálico",img:HB+"2025-08/Imagem-Home-Sahara-300-Adventure-Bege%20Met%C3%A1lico_0.webp"}],
+ fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","291,6 cc"],["Potência Máxima","24,3 cv a 8.500 rpm"],["Torque Máximo","2,61 kgf.m a 6.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","6 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","13,7 litros"],["Óleo do motor","2,0 litros"],["USB-C","Sim"]],"Dimensões":[["Comprimento","2.210 mm"],["Altura do assento","855 mm"],["Peso seco","160 kg"],["Clearance","260 mm"]],"Ciclística":[["Freio dianteiro","Disco 276mm – ABS"],["Freio traseiro","Disco 220mm – ABS"],["Suspensão dianteira","Telescópica invertida 43mm"],["Pneu dianteiro","100/90-19"],["Pneu traseiro","130/80-17"]]}},
+
+{nome:"XR 300L Tornado",tipo:"Trail",lancamento:false,
+ img:HB+"2025-08/Imagem-Home-XR-300L-Tornado-Vermelho-Fighting-Red_0.webp",
+ url:WH+"xr-300l-tornado",
+ cores:[
+  {nome:"Vermelho Fighting Red",img:HB+"2025-08/Imagem-Home-XR-300L-Tornado-Vermelho-Fighting-Red_0.webp"},
+  {nome:"Preto Black",img:HB+"2025-08/Imagem-Home-XR-300L-Tornado-Preto_0.webp"}],
+ fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","291,6 cc"],["Potência Máxima","26,1 cv a 8.500 rpm"],["Torque Máximo","2,61 kgf.m a 6.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","6 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","14 litros"],["Óleo do motor","2,0 litros"]],"Dimensões":[["Comprimento","2.195 mm"],["Altura do assento","895 mm"],["Peso seco","145 kg"],["Clearance","285 mm"]],"Ciclística":[["Freio dianteiro","Disco 276mm – ABS"],["Freio traseiro","Disco 220mm"],["Suspensão dianteira","Telescópica 43mm – curso 230mm"],["Pneu dianteiro","80/100-21"],["Pneu traseiro","100/100-18"]]}},
+
+{nome:"Tornado Special Edition",tipo:"Trail",lancamento:true,
+ img:HB+"2026-02/Honda%20tornado%20vista%20lateral%20home_0.webp",
+ url:WH+"tornado-special-edition",
+ cores:[{nome:"Edição Especial",img:HB+"2026-02/Honda%20tornado%20vista%20lateral%20home_0.webp"}],
+ fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","291,6 cc"],["Potência Máxima","26,1 cv a 8.500 rpm"],["Torque Máximo","2,61 kgf.m a 6.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","6 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","14 litros"]],"Dimensões":[["Altura do assento","895 mm"],["Peso seco","145 kg"],["Clearance","285 mm"]],"Ciclística":[["Freio dianteiro","Disco 276mm – ABS"],["Freio traseiro","Disco 220mm"],["Suspensão dianteira","Telescópica 43mm – curso 230mm"]]}},
+
+/* ==================== ADVENTURE ==================== */
+{nome:"NX 500",tipo:"Adventure",lancamento:true,
+ img:HB+"2025-08/Imagem-home-honda-NX500-Vermelha-Lateral_0.webp",
+ url:WH+"nx-500",
+ cores:[
+  {nome:"Vermelho Perolizado",img:HB+"2025-08/Imagem-home-honda-NX500-Vermelha-Lateral_0.webp"},
+  {nome:"Preto Metálico",img:HB+"2025-08/Imagem-home-honda-NX500-Preta-Lateral_0.webp"}],
+ fichas:{"Motor":[["Tipo","Bicilíndrico em linha, DOHC, arrefecido a água"],["Cilindrada","471 cc"],["Potência Máxima","50,2 cv a 9.500 rpm"],["Torque Máximo","4,56 kgf.m a 7.750 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","6 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","17,7 litros"]],"Dimensões":[["Altura do assento","820 mm"],["Peso seco","196 kg"],["Clearance","155 mm"]],"Ciclística":[["Freio dianteiro","Disco Dual – ABS Cornering"],["Freio traseiro","Disco – ABS"],["Suspensão dianteira","Telescópica invertida Showa 41mm"],["Controle de tração","Sim"],["Modos de pilotagem","Standard, Sport, Rain, Gravel"]]}},
+
+{nome:"NC 750X",tipo:"Adventure",lancamento:true,
+ img:HB+"2025-10/Lateral-v_0.webp",
+ url:WH+"nc-750x",
+ cores:[
+  {nome:"Preto Metálico - Mat Gunpowder Black",img:HB+"2025-10/Lateral-v_0.webp"},
+  {nome:"Cinza Metálico",img:HB+"2025-10/Lateral-v-cinza_0.webp"}],
+ fichas:{"Motor":[["Tipo","Bicilíndrico em linha, SOHC, arrefecido a água"],["Cilindrada","745 cc"],["Potência Máxima","58,4 cv a 6.750 rpm"],["Torque Máximo","6,9 kgf.m a 4.750 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","6 marchas ou DCT (dupla embreagem)"],["Partida","Elétrica"]],"Capacidade":[["Tanque","14,1 litros"],["Porta-objetos dianteiro","21 litros"]],"Dimensões":[["Altura do assento","800 mm"],["Peso seco","217 kg (MT)"]],"Ciclística":[["Freio dianteiro","Disco Dual – ABS"],["Freio traseiro","Disco – ABS"],["Suspensão dianteira","Telescópica invertida Showa"],["Controle de tração (HSTC)","Sim"],["Modos de pilotagem","Standard, Sport, Rain, User"]]}},
+
+{nome:"XL 750 Transalp",tipo:"Adventure",lancamento:true,
+ img:HB+"2025-11/honda-transalp-vista-lateral-completa-da-motocicleta_0.webp",
+ url:WH+"xl750-transalp",
+ cores:[
+  {nome:"Tricolor Vermelho/Branco/Azul",img:HB+"2025-11/honda-transalp-vista-lateral-completa-da-motocicleta_0.webp"},
+  {nome:"Cinza Metálico",img:HB+"2025-08/Imagem-home-honda-Transalp-Cinza-Lateral_0.webp"}],
+ fichas:{"Motor":[["Tipo","Bicilíndrico em V paralelo, DOHC, arrefecido a água"],["Cilindrada","755 cc"],["Potência Máxima","91,7 cv a 9.500 rpm"],["Torque Máximo","75 Nm a 7.250 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","6 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","21 litros"],["Entrada USB","Sim"]],"Dimensões":[["Altura do assento","850 mm"],["Peso seco","208 kg"],["Clearance","210 mm"]],"Ciclística":[["Freio dianteiro","Disco Dual – ABS Cornering"],["Freio traseiro","Disco – ABS"],["Suspensão dianteira","Telescópica invertida Showa 43mm"],["Controle de tração (HSTC)","Sim"],["Modos","Tour, Urban, Gravel, Sport, User"],["Painel","TFT 5 polegadas – RoadSync"]]}},
+
+{nome:"Africa Twin MT",tipo:"Adventure",lancamento:true,
+ img:HB+"2025-12/CRF1100L%20Africa%20Twin%20Adventure%20Sports%20DCT%20ES%20vista%20lateralmente_0.webp",
+ url:WH+"africa-twin",
+ cores:[
+  {nome:"Tricolor – Grand Prix Red",img:HB+"2025-12/CRF1100L%20Africa%20Twin%20Adventure%20Sports%20DCT%20ES%20vista%20lateralmente_0.webp"},
+  {nome:"Preto – Pearl Glare White",img:HB+"2025-08/Imagem-home-honda-AfricaTwin-Preta-Lateral_0.webp"}],
+ fichas:{"Motor":[["Tipo","Bicilíndrico em linha, SOHC, arrefecido a água"],["Cilindrada","1.084 cc"],["Potência Máxima","101,7 cv a 7.500 rpm"],["Torque Máximo","10,5 kgf.m a 6.250 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","6 marchas – Manual (MT)"],["Partida","Elétrica"]],"Capacidade":[["Tanque","18,8 litros"],["USB-C","Sim"]],"Dimensões":[["Altura do assento","850/870 mm"],["Peso seco","226 kg"],["Clearance","250 mm"]],"Ciclística":[["Freio dianteiro","Disco Dual 310mm – ABS Cornering"],["Freio traseiro","Disco 256mm – ABS"],["Suspensão dianteira","Telescópica invertida Showa 45mm – 230mm"],["HSTC (controle de tração)","Sim"],["Modos","Tour, Urban, Enduro, Gravel, User"],["Painel","TFT 6,5 polegadas – Apple CarPlay"]]}},
+
+{nome:"Africa Twin DCT",tipo:"Adventure",lancamento:true,
+ img:HB+"2025-12/CRF1100L%20Africa%20Twin%20Adventure%20Sports%20DCT%20ES%20vista%20lateralmente_0.webp",
+ url:WH+"africa-twin",
+ cores:[
+  {nome:"Tricolor – Grand Prix Red",img:HB+"2025-12/CRF1100L%20Africa%20Twin%20Adventure%20Sports%20DCT%20ES%20vista%20lateralmente_0.webp"},
+  {nome:"Preto",img:HB+"2025-08/Imagem-home-honda-AfricaTwin-DCT-Preta-Lateral_0.webp"}],
+ fichas:{"Motor":[["Tipo","Bicilíndrico em linha, SOHC, arrefecido a água"],["Cilindrada","1.084 cc"],["Potência Máxima","101,7 cv a 7.500 rpm"],["Torque Máximo","10,5 kgf.m a 6.250 rpm"],["Transmissão","DCT – Dupla Embreagem Automática"],["Partida","Elétrica"]],"Capacidade":[["Tanque","18,8 litros"],["USB-C","Sim"]],"Dimensões":[["Altura do assento","850/870 mm"],["Peso seco","231 kg"],["Clearance","250 mm"]],"Ciclística":[["Freio dianteiro","Disco Dual 310mm – ABS Cornering"],["Freio traseiro","Disco 256mm – ABS"],["DCT","Troca automática de marchas"],["HSTC","Sim"],["Modos","Tour, Urban, Enduro, Gravel, User"],["Painel","TFT 6,5 polegadas – Apple CarPlay"]]}},
+
+{nome:"Africa Twin Adv. Sports MT",tipo:"Adventure",lancamento:true,
+ img:HB+"2025-12/CRF1100L%20Africa%20Twin%20Adventure%20Sports%20DCT%20ES%20vista%20lateralmente_0.webp",
+ url:WH+"africa-twin",
+ cores:[
+  {nome:"Pearl Glare White",img:HB+"2025-08/Imagem-home-honda-AfricaTwinAdv-Branca-Lateral_0.webp"},
+  {nome:"Tricolor",img:HB+"2025-12/CRF1100L%20Africa%20Twin%20Adventure%20Sports%20DCT%20ES%20vista%20lateralmente_0.webp"}],
+ fichas:{"Motor":[["Tipo","Bicilíndrico em linha, SOHC, arrefecido a água"],["Cilindrada","1.084 cc"],["Potência Máxima","101,7 cv a 7.500 rpm"],["Torque Máximo","10,5 kgf.m a 6.250 rpm"],["Transmissão","6 marchas – Manual (MT)"],["Partida","Elétrica"]],"Capacidade":[["Tanque","24,8 litros (maior autonomia)"],["USB-C","Sim"]],"Dimensões":[["Altura do assento","855/875 mm"],["Peso seco","238 kg"],["Clearance","250 mm"]],"Ciclística":[["Freio dianteiro","Disco Dual 310mm – ABS Cornering"],["Freio traseiro","Disco 256mm – ABS"],["HSTC","Sim"],["Modos","Tour, Urban, Enduro, Gravel, User"],["Painel","TFT 6,5 polegadas – Apple CarPlay"]]}},
+
+{nome:"Africa Twin Adv. Sports DCT",tipo:"Adventure",lancamento:true,
+ img:HB+"2025-12/CRF1100L%20Africa%20Twin%20Adventure%20Sports%20DCT%20ES%20vista%20lateralmente_0.webp",
+ url:WH+"africa-twin",
+ cores:[
+  {nome:"Pearl Glare White",img:HB+"2025-08/Imagem-home-honda-AfricaTwinAdv-Branca-Lateral_0.webp"},
+  {nome:"Tricolor",img:HB+"2025-12/CRF1100L%20Africa%20Twin%20Adventure%20Sports%20DCT%20ES%20vista%20lateralmente_0.webp"}],
+ fichas:{"Motor":[["Tipo","Bicilíndrico em linha, SOHC, arrefecido a água"],["Cilindrada","1.084 cc"],["Potência Máxima","101,7 cv a 7.500 rpm"],["Torque Máximo","10,5 kgf.m a 6.250 rpm"],["Transmissão","DCT – Dupla Embreagem Automática"],["Partida","Elétrica"]],"Capacidade":[["Tanque","24,8 litros (maior autonomia)"],["USB-C","Sim"]],"Dimensões":[["Altura do assento","855/875 mm"],["Peso seco","242 kg"],["Clearance","250 mm"]],"Ciclística":[["Freio dianteiro","Disco Dual 310mm – ABS Cornering"],["Freio traseiro","Disco 256mm – ABS"],["DCT","Troca automática de marchas"],["HSTC","Sim"],["Modos","Tour, Urban, Enduro, Gravel, User"],["Painel","TFT 6,5 polegadas – Apple CarPlay"]]}},
+
+/* ==================== OFF ROAD ==================== */
+{nome:"CRF 300F",tipo:"Off Road",lancamento:true,
+ img:HB+"2025-08/Imagem-Home-Honda-CRF-300F-Vermelho-Extreme-Red_0.webp",
+ url:WH+"crf-300f",
+ cores:[{nome:"Vermelho Extreme Red",img:HB+"2025-08/Imagem-Home-Honda-CRF-300F-Vermelho-Extreme-Red_0.webp"}],
+ fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a água"],["Cilindrada","286 cc"],["Potência Máxima","27,3 cv a 8.500 rpm"],["Torque Máximo","2,78 kgf.m a 6.750 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","6 marchas"],["Partida","Elétrica + Kick"]],"Capacidade":[["Tanque","9,3 litros"],["Óleo do motor","1,5 litro"]],"Dimensões":[["Comprimento","2.165 mm"],["Altura do assento","890 mm"],["Peso seco","137 kg"],["Clearance","295 mm"]],"Ciclística":[["Freio dianteiro","Disco 260mm – ABS (1 canal)"],["Freio traseiro","Disco 240mm"],["Suspensão dianteira","Telescópica invertida Showa 49mm – 300mm"],["Suspensão traseira","Pro-Link Showa – 305mm"],["Pneu dianteiro","80/100-21"],["Pneu traseiro","100/100-18"]]}},
+
+{nome:"TRX 420 FourTrax",tipo:"Off Road",lancamento:false,
+ img:HB+"2025-08/TRX%20Vermelha%202023%20Cor%20Eixo_lateral.webp",
+ url:WH+"trx-420-fourtrax",
+ cores:[{nome:"Vermelho Fighting Red",img:HB+"2025-08/TRX%20Vermelha%202023%20Cor%20Eixo_lateral.webp"}],
+ fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a água"],["Cilindrada","420 cc"],["Potência Máxima","(Uso off-road)"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","5 marchas semi-automáticas + Ré"],["Partida","Elétrica"]],"Capacidade":[["Tanque","15,0 litros"]],"Dimensões":[["Comprimento","1.870 mm"],["Largura","1.160 mm"],["Peso seco","278 kg"],["Altura do assento","840 mm"]],"Ciclística":[["Tração","2x4 / 4x4 selecionável"],["Freio dianteiro","Disco hidráulico"],["Freio traseiro","Tambor"],["Suspensão dianteira","Independente – curso 165mm"],["Suspensão traseira","Swing Arm – curso 185mm"]]}}
 ];
 
 let currentCat='todos';
@@ -385,13 +528,10 @@ function renderGrid(){
   grid.innerHTML=filtered.map(m=>{
     const idx=motos.indexOf(m);
     return`<div class="moto-card" onclick="openModal(${idx})">
-      ${m.lancamento?'<div class="lancamento-badge">Lançamento</div>':'<div style="height:20px"></div>'}
+      ${m.lancamento?'<div class="lancamento-badge">Lançamento</div>':'<div class="spacer-badge"></div>'}
       <div class="moto-name">${m.nome}</div>
       <div class="moto-tipo">${m.tipo}</div>
-      <div class="moto-img-wrap"><img src="${m.img}" alt="${m.nome}" onerror="this.style.opacity='.2'"></div>
-      <div class="moto-price-label">A partir de</div>
-      <div class="moto-price">${m.preco}</div>
-      <div class="moto-price-note">*Preço público sugerido.<br>Frete não incluso.</div>
+      <div class="moto-img-wrap"><img src="${m.img}" alt="${m.nome}" onerror="this.style.opacity='.15'"></div>
       <button class="btn-ver">Tenho interesse</button>
     </div>`;
   }).join('');
@@ -400,24 +540,25 @@ function openModal(idx){
   const m=motos[idx];
   document.getElementById('mName').textContent=m.nome;
   document.getElementById('mTipo').textContent=m.tipo;
-  document.getElementById('mPrice').textContent=m.preco;
   document.getElementById('mMainImg').src=m.img;
   document.getElementById('mMainImg').alt=m.nome;
-  document.getElementById('mColors').innerHTML=m.cores.map((c,i)=>`<div class="color-opt ${i===0?'active':''}" onclick="selectColor(this,'${c.img}')"><img src="${c.img}" alt="${c.nome}"><span>${c.nome}</span></div>`).join('');
+  document.getElementById('mColors').innerHTML=m.cores.map((c,i)=>`<div class="color-opt ${i===0?'active':''}" onclick="selectColor(this,'${c.img}')"><img src="${c.img}" alt="${c.nome}" onerror="this.style.display='none'"><span>${c.nome}</span></div>`).join('');
   const tabs=Object.keys(m.fichas);
   document.getElementById('specTabs').innerHTML=tabs.map((t,i)=>`<button class="spec-tab ${i===0?'active':''}" onclick="showSpec('${t}',this)">${t}</button>`).join('');
   document.getElementById('specPanels').innerHTML=tabs.map((t,i)=>`<div class="spec-panel ${i===0?'active':''}" id="spec-${t}"><table class="spec-table">${m.fichas[t].map(([k,v])=>`<tr><td>${k}</td><td>${v}</td></tr>`).join('')}</table></div>`).join('');
-  const msg=encodeURIComponent(`Olá Amanda! Vi seu portfólio e tenho interesse na ${m.nome}. Pode me dar mais informações?`);
+  const msg=encodeURIComponent(`Olá Amanda! Vi seu portfólio e tenho interesse na ${m.nome}. Pode me passar mais informações e condições?`);
   document.getElementById('mWppBtn').href=`https://wa.me/${WPP}?text=${msg}`;
-  document.getElementById('mHondaBtn').href=m.url;
+  document.getElementById('mWinnerBtn').href=m.url;
   document.getElementById('modalOverlay').classList.add('active');
   document.body.style.overflow='hidden';
   document.getElementById('modal').scrollTop=0;
+  document.querySelectorAll('.pay-card').forEach(c=>c.classList.remove('open'));
 }
 function selectColor(el,img){
   document.querySelectorAll('.color-opt').forEach(o=>o.classList.remove('active'));
   el.classList.add('active');
   document.getElementById('mMainImg').src=img;
+  document.getElementById('zoomImg').src=img;
 }
 function showSpec(name,btn){
   document.querySelectorAll('.spec-tab').forEach(t=>t.classList.remove('active'));
@@ -428,18 +569,9 @@ function showSpec(name,btn){
 function togglePay(id){document.getElementById(id).classList.toggle('open');}
 function closeModal(){document.getElementById('modalOverlay').classList.remove('active');document.body.style.overflow='';}
 function handleOverlayClick(e){if(e.target===document.getElementById('modalOverlay'))closeModal();}
+function openZoom(){const s=document.getElementById('mMainImg').src;document.getElementById('zoomImg').src=s;document.getElementById('zoomOverlay').classList.add('active');}
+function closeZoom(){document.getElementById('zoomOverlay').classList.remove('active');}
 renderGrid();
-
-// SISTEMA DE ZOOM DA IMAGEM
-function openZoom() {
-  const imgSrc = document.getElementById('mMainImg').src;
-  document.getElementById('zoomImg').src = imgSrc;
-  document.getElementById('zoomOverlay').classList.add('active');
-}
-function closeZoom() {
-  document.getElementById('zoomOverlay').classList.remove('active');
-}
-  
 </script>
 </body>
 </html>
