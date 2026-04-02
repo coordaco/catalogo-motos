@@ -15,8 +15,6 @@
   --wpp: #25D366; --wpp-dark: #1DAA53;
 }
 body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--black); }
-
-/* HERO */
 .hero { background: linear-gradient(135deg, #111 0%, #1a1a1a 100%); padding: 3rem 1.25rem 2.5rem; text-align: center; position: relative; border-bottom: 4px solid var(--red); overflow: hidden; }
 .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at top center, rgba(204,0,0,0.18) 0%, transparent 60%); pointer-events: none; }
 .winner-logo { position: absolute; top: 22px; right: 22px; max-width: 120px; z-index: 10; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4)); }
@@ -33,19 +31,13 @@ body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--
 .btn-wpp-hero { background: var(--wpp); }
 .btn-insta-hero { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
 .btn-wpp-hero svg, .btn-insta-hero svg { width: 18px; height: 18px; fill: currentColor; }
-
-/* SECTION HEADER */
 .section-header { display:flex; align-items:center; gap:12px; padding:1.75rem 1.25rem 0; margin-bottom:1rem; }
 .section-header h2 { font-size:1.1rem; font-weight:700; white-space:nowrap; }
 .section-line { flex:1; height:1px; background:var(--gray-border); }
-
-/* CAT TABS */
 .cat-tabs { display:flex; gap:6px; padding:0 1.25rem 1rem; overflow-x:auto; scrollbar-width:none; }
 .cat-tabs::-webkit-scrollbar { display:none; }
 .cat-tab { flex-shrink:0; background:none; border:1.5px solid var(--gray-border); border-radius:20px; padding:6px 14px; font-family:'Inter',sans-serif; font-size:0.78rem; font-weight:500; color:var(--gray-text); cursor:pointer; white-space:nowrap; transition:all .15s; }
 .cat-tab.active { background:var(--red); border-color:var(--red); color:#fff; }
-
-/* GRID */
 .motos-grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap:1px; background:var(--gray-border); border-top:1px solid var(--gray-border); border-bottom:1px solid var(--gray-border); }
 .moto-card { background:var(--white); padding:1.2rem 1rem 1rem; cursor:pointer; display:flex; flex-direction:column; transition:background 0.2s; }
 .moto-card:hover { background:#fafafa; }
@@ -64,8 +56,6 @@ body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--
   .moto-img-wrap img { max-height:180px; filter:drop-shadow(0 4px 8px rgba(0,0,0,0.08)); }
   .moto-name { font-size:1.15rem; }
 }
-
-/* MODAL */
 .modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,.55); z-index:100; align-items:flex-end; }
 .modal-overlay.active { display:flex; }
 .modal { background:var(--white); width:100%; max-height:94vh; overflow-y:auto; animation:slideUp .28s ease; }
@@ -74,8 +64,6 @@ body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--
 .modal-moto-name { font-size:1.25rem; font-weight:700; line-height:1.15; }
 .modal-moto-tipo { font-size:0.72rem; color:var(--gray-text); margin-top:1px; }
 .modal-close { background:var(--gray-bg); border:none; border-radius:50%; width:34px; height:34px; cursor:pointer; font-size:16px; color:var(--gray-text); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
-
-/* GALLERY */
 .modal-gallery { padding:1.25rem 1.25rem 0; }
 .modal-main-img { background:var(--gray-bg); display:flex; align-items:center; justify-content:center; height:200px; margin-bottom:10px; cursor:zoom-in; }
 .modal-main-img img { max-height:185px; max-width:100%; object-fit:contain; }
@@ -85,8 +73,6 @@ body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--
 .color-opt img { width:70px; height:46px; object-fit:contain; background:var(--gray-bg); padding:4px; border:2px solid transparent; transition:border-color .15s; }
 .color-opt.active img { border-color:var(--red); }
 .color-opt span { font-size:9px; color:var(--gray-text); text-align:center; max-width:70px; line-height:1.2; }
-
-/* SPEC TABS */
 .modal-section { padding:1rem 1.25rem 0; }
 .spec-tabs { display:flex; border-bottom:1px solid var(--gray-border); overflow-x:auto; scrollbar-width:none; }
 .spec-tabs::-webkit-scrollbar { display:none; }
@@ -100,8 +86,6 @@ body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--
 .spec-table td { padding:10px 0; font-size:0.8rem; vertical-align:top; }
 .spec-table td:first-child { font-weight:600; color:var(--black); width:50%; padding-right:8px; }
 .spec-table td:last-child { color:var(--gray-text); text-align:right; }
-
-/* PAY ACCORDION */
 .pay-section { padding:1.25rem; background:var(--gray-bg); margin-top:1.25rem; }
 .pay-section-title { font-size:0.68rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--gray-text); margin-bottom:.75rem; }
 .pay-cards { display:flex; flex-direction:column; gap:8px; }
@@ -115,20 +99,14 @@ body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--
 .pay-card.open .pay-card-body { display:block; }
 .pay-card-body ul { padding-left:1rem; margin-top:6px; }
 .pay-card-body ul li { margin-bottom:3px; }
-
-/* CTA */
 .modal-cta { padding:1rem 1.25rem 2rem; display:flex; flex-direction:column; gap:8px; }
 .btn-wpp-modal { display:flex; align-items:center; justify-content:center; gap:8px; background:var(--wpp); color:#fff; border:none; border-radius:4px; padding:14px; font-family:'Inter',sans-serif; font-size:0.9rem; font-weight:600; cursor:pointer; text-decoration:none; }
 .btn-wpp-modal svg { width:19px; height:19px; }
 .btn-winner-site { display:flex; align-items:center; justify-content:center; background:none; border:1.5px solid var(--gray-border); border-radius:4px; padding:11px; font-family:'Inter',sans-serif; font-size:0.8rem; font-weight:500; color:var(--gray-text); text-decoration:none; }
-
-/* ZOOM */
 .zoom-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.92); z-index:9999; align-items:center; justify-content:center; cursor:zoom-out; }
 .zoom-overlay.active { display:flex; }
 .zoom-overlay img { max-width:95%; max-height:95%; object-fit:contain; filter:drop-shadow(0 10px 25px rgba(0,0,0,0.5)); }
 .zoom-close { position:absolute; top:20px; right:25px; color:#fff; font-size:28px; cursor:pointer; font-weight:bold; padding:10px; z-index:10000; }
-
-/* FOOTER */
 footer { background:var(--black); padding:1.5rem 1.25rem; text-align:center; }
 footer p { color:#777; font-size:0.75rem; line-height:1.6; }
 footer strong { color:var(--red); }
@@ -238,7 +216,6 @@ footer strong { color:var(--red); }
     </div>
   </div>
 </div>
-
 <div class="zoom-overlay" id="zoomOverlay" onclick="closeZoom()">
   <span class="zoom-close">✕</span>
   <img id="zoomImg" src="" alt="">
@@ -249,8 +226,11 @@ const WPP="5519978211008";
 const HB="https://www.honda.com.br/motos/sites/hda/files/";
 const WH="https://www.winnerhonda.com.br/zero-km/";
 
+// Helper: spec data as [label, value] pairs — 5 fixed tabs matching Winner Honda site
+// Tabs: "Motor" | "Sistema elétrico" | "Capacidade" | "Dimensões" | "Chassi"
+
 const motos=[
-/* ==================== CITY ==================== */
+// ==================== CITY ====================
 {nome:"Pop 110i ES",tipo:"City",lancamento:false,
  img:HB+"2024-06/imagem-home-moto-pop-110i-es-branco-ross-white-lateral_1.webp",
  url:WH+"pop-110i",
@@ -258,7 +238,12 @@ const motos=[
   {nome:"Branco - Ross White",img:HB+"2024-06/imagem-home-moto-pop-110i-es-branco-ross-white-lateral_1.webp"},
   {nome:"Vermelho - Fighting Red",img:HB+"2025-08/Imagem-Home-Pop-110i-Es-Vermelho-Fighting-Red_0.webp"},
   {nome:"Preto Black",img:HB+"2025-08/Imagem-Home-Pop-110i-Es-Preto-Black_0.webp"}],
- fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","109,5 cc"],["Diâmetro x Curso","47,0 x 63,1 mm"],["Potência Máxima","8,43 cv a 7.250 rpm"],["Torque Máximo","0,945 kgf.m a 5.000 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","4 marchas – Semiautomática"],["Partida","Elétrica"]],"Capacidade":[["Tanque","4,2 litros (≈1,0 l reserva)"],["Óleo do motor","1,0 litro"]],"Dimensões":[["Comprimento","1.870 mm"],["Altura do assento","745 mm"],["Peso seco","87 kg"],["Distância entre eixos","1.195 mm"]],"Ciclística":[["Freio dianteiro","Disco hidráulico – CBS"],["Freio traseiro","Tambor – CBS"],["Suspensão dianteira","Telescópica"],["Pneu dianteiro","60/100-17"],["Pneu traseiro","80/100-14"]]}},
+ fichas:{
+  "Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","109,5 cc"],["Potência Máxima","8,43 cv a 7.250 rpm"],["Torque Máximo","0,945 kgf.m a 5.000 rpm"],["Transmissão","4 velocidades"],["Sistema de Partida","Elétrica"],["Diâmetro x Curso","47,0 x 63,1 mm"],["Relação de Compressão","10,0:1"],["Sistema Alimentação","Injeção Eletrônica PGM-FI"],["Combustível","Gasolina"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V - 4 Ah"],["Farol","35/35 W"]],
+  "Capacidade":[["Tanque de Combustível","4,2 litros (res. ≈1,0 litro)"],["Óleo do Motor","1,0 litro (0,8 litro/troca)"]],
+  "Dimensões":[["Comprimento x Largura x Altura","1843 x 727 x 1031 mm"],["Distância entre eixos","1238 mm"],["Distância mínima do solo","137 mm"],["Altura do assento","745 mm"],["Peso Seco","87 kg"]],
+  "Chassi":[["Tipo","Monobloco"],["Suspensão Dianteira/Curso","Garfo telescópico / 100 mm"],["Suspensão Traseira/Curso","Dois amortecedores / 79 mm"],["Freio Dianteiro/Diâmetro","A tambor / 110 mm"],["Freio Traseiro/Diâmetro","A tambor / 110 mm"],["Pneu Dianteiro","60/100 - 17"],["Pneu Traseiro","80/100 - 14"]]}},
 
 {nome:"Biz 125",tipo:"City",lancamento:false,
  img:HB+"2025-10/imagem-home-honda-biz-125-es-lateral-vermelho_0.webp",
@@ -267,7 +252,12 @@ const motos=[
   {nome:"Vermelho - Maceio Red",img:HB+"2025-10/imagem-home-honda-biz-125-es-lateral-vermelho_0.webp"},
   {nome:"Branco - Ross White",img:HB+"2025-08/Imagem-Home-Honda-Biz-125-ES-Branco-Ross-White_0.webp"},
   {nome:"Preto Black",img:HB+"2025-08/Imagem-Home-Honda-Biz-125-ES-Preto-Black_0.webp"}],
- fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","124,7 cc"],["Potência Máxima","9,7 cv a 7.500 rpm"],["Torque Máximo","1,05 kgf.m a 5.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","4 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","5,3 litros"],["Óleo do motor","1,0 litro"]],"Dimensões":[["Comprimento","1.918 mm"],["Largura","713 mm"],["Altura do assento","768 mm"],["Peso seco","105 kg"]],"Ciclística":[["Freio dianteiro","Disco hidráulico – CBS"],["Freio traseiro","Tambor – CBS"],["Pneu dianteiro","70/90-17"],["Pneu traseiro","80/90-17"]]}},
+ fichas:{
+  "Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","123,9 cc"],["Potência Máxima","9,53 cv a 7.500 rpm (Gasolina/Etanol)"],["Torque Máximo","1,03 kgf.m a 6.000 rpm"],["Transmissão","4 velocidades"],["Sistema de Partida","Elétrica"],["Diâmetro x Curso","50,0 x 63,1 mm"],["Relação de Compressão","10,0:1"],["Sistema Alimentação","Injeção Eletrônica PGM-FI"],["Combustível","Gasolina"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V - 5 Ah"],["Farol","35/35 W"]],
+  "Capacidade":[["Tanque de Combustível","5,0 litros (res. 1,1 litros)"],["Óleo do Motor","1,1 litro (0,90 litro/troca)"]],
+  "Dimensões":[["Comprimento x Largura x Altura","1897 x 715 x 1086 mm"],["Distância entre eixos","1261 mm"],["Distância mínima do solo","128 mm"],["Altura do assento","749 mm"],["Peso Seco","96 kg"]],
+  "Chassi":[["Tipo","Monobloco"],["Suspensão Dianteira/Curso","Garfo telescópico / 100 mm"],["Suspensão Traseira/Curso","Braço oscilante / 85 mm"],["Freio Dianteiro/Diâmetro","A tambor / 130 mm"],["Freio Traseiro/Diâmetro","A tambor / 130 mm"],["Pneu Dianteiro","60/100 - 17M/C 33S"],["Pneu Traseiro","80/100 - 14M/C 49S REINF"]]}},
 
 {nome:"CG 160 Start",tipo:"City",lancamento:false,
  img:HB+"2025-08/Imagem-home-visao-da-lateral-direita-da-honda-cg-160-start.webp",
@@ -276,7 +266,12 @@ const motos=[
   {nome:"Azul Perolizado - Pearl Spencer Blue",img:HB+"2025-08/Imagem-home-visao-da-lateral-direita-da-honda-cg-160-start.webp"},
   {nome:"Vermelho Perolizado - Pearl Marrakesh Red",img:HB+"2025-08/Imagem-Home-Honda-CG-160-Start-Vermelho-Perolizado_0.webp"},
   {nome:"Preto - Black",img:HB+"2025-08/Imagem-Home-Honda-CG-160-Start-Preto.webp"}],
- fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","11,7 cv a 7.500 rpm"],["Torque Máximo","1,33 kgf.m a 5.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","5 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","14 litros"],["Óleo do motor","1,2 litro"]],"Dimensões":[["Comprimento","2.039 mm"],["Altura do assento","793 mm"],["Peso seco","140 kg"]],"Ciclística":[["Freio dianteiro","Disco hidráulico – CBS"],["Freio traseiro","Tambor – CBS"],["Suspensão dianteira","Telescópica"],["Suspensão traseira","Mono Shock"]]}},
+ fichas:{
+  "Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","14,4 cv a 8.000 rpm (Gasolina)"],["Torque Máximo","1,41 kgf.m a 6.750 rpm"],["Transmissão","5 velocidades"],["Sistema de Partida","Elétrica"],["Diâmetro x Curso","57,3 x 63,0 mm"],["Relação de Compressão","9,5:1"],["Sistema Alimentação","Injeção Eletrônica PGM-FI"],["Combustível","Gasolina"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V - 4 Ah"],["Farol","35/35 W"]],
+  "Capacidade":[["Tanque de Combustível","14,0 litros (res. 2,5 litros)"],["Óleo do Motor","1,2 litro (1,0 litro/troca)"]],
+  "Dimensões":[["Comprimento x Largura x Altura","2030 x 747 x 1094 mm"],["Distância entre eixos","1311 mm"],["Distância mínima do solo","190 mm"],["Altura do assento","796 mm"],["Peso Seco","117 kg"]],
+  "Chassi":[["Tipo","Diamond Frame"],["Suspensão Dianteira/Curso","Garfo telescópico 33mm / 120 mm"],["Suspensão Traseira/Curso","Dois amortecedores / 106 mm"],["Freio Dianteiro/Diâmetro","A disco / 240 mm – CBS"],["Freio Traseiro/Diâmetro","A tambor / 130 mm – CBS"],["Pneu Dianteiro","80/100 - 18M/C 47S"],["Pneu Traseiro","100/80 - 18M/C 59S"]]}},
 
 {nome:"CG 160 Fan",tipo:"City",lancamento:false,
  img:HB+"2025-08/Imagem-Home-Honda-CG-160-Fan-Prata-Met%C3%A1lico.webp",
@@ -285,7 +280,12 @@ const motos=[
   {nome:"Prata Metálico",img:HB+"2025-08/Imagem-Home-Honda-CG-160-Fan-Prata-Met%C3%A1lico.webp"},
   {nome:"Vermelho Perolizado",img:HB+"2025-08/Imagem-Home-Honda-CG-160-Fan-Vermelho-Perolizado.webp"},
   {nome:"Preto Metálico",img:HB+"2025-08/Imagem-Home-Honda-CG-160-Fan-Preto-Met%C3%A1lico.webp"}],
- fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","12,3 cv a 8.000 rpm"],["Torque Máximo","1,38 kgf.m a 5.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","5 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","14 litros"],["Óleo do motor","1,2 litro"]],"Dimensões":[["Comprimento","2.039 mm"],["Altura do assento","793 mm"],["Peso seco","141 kg"]],"Ciclística":[["Freio dianteiro","Disco hidráulico – CBS"],["Freio traseiro","Tambor – CBS"],["Suspensão dianteira","Telescópica"],["Suspensão traseira","Mono Shock"]]}},
+ fichas:{
+  "Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","14,4 cv (gas.) / 14,7 cv (etanol) a 8.000 rpm"],["Torque Máximo","1,41 kgf.m (gas.) / 1,43 kgf.m (etanol) a 6.750 rpm"],["Transmissão","5 velocidades"],["Sistema de Partida","Elétrica"],["Diâmetro x Curso","57,3 x 63,0 mm"],["Relação de Compressão","9,5:1"],["Sistema Alimentação","Injeção Eletrônica PGM-FI FlexOne"],["Combustível","Gasolina e/ou Etanol"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V - 4 Ah"],["Farol","LED"]],
+  "Capacidade":[["Tanque de Combustível","14,0 litros (res. 2,5 litros)"],["Óleo do Motor","1,2 litro (1,0 litro/troca)"]],
+  "Dimensões":[["Comprimento x Largura x Altura","2030 x 747 x 1094 mm"],["Distância entre eixos","1311 mm"],["Distância mínima do solo","190 mm"],["Altura do assento","796 mm"],["Peso Seco","119 kg"]],
+  "Chassi":[["Tipo","Diamond Frame"],["Suspensão Dianteira/Curso","Garfo telescópico 33mm / 120 mm"],["Suspensão Traseira/Curso","Dois amortecedores / 106 mm"],["Freio Dianteiro/Diâmetro","A disco / 240 mm – CBS"],["Freio Traseiro/Diâmetro","A tambor / 130 mm – CBS"],["Pneu Dianteiro","80/100 - 18M/C 47S"],["Pneu Traseiro","100/80 - 18M/C 59S"]]}},
 
 {nome:"CG 160 Titan",tipo:"City",lancamento:false,
  img:HB+"2025-08/Imagem-Home-Honda-CG-160-Titan-Cinza-Met%C3%A1lico.webp",
@@ -294,22 +294,37 @@ const motos=[
   {nome:"Cinza Metálico - Pearl Stark Gray",img:HB+"2025-08/Imagem-Home-Honda-CG-160-Titan-Cinza-Met%C3%A1lico.webp"},
   {nome:"Vermelho Metálico - Pearl Royalty Red",img:HB+"2025-08/Imagem-Home-Honda-CG-160-Titan-Vermelho-Met%C3%A1lico.webp"},
   {nome:"Preto Metálico",img:HB+"2025-08/Imagem-Home-Honda-CG-160-Titan-Preto-Met%C3%A1lico.webp"}],
- fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","12,4 cv a 8.000 rpm"],["Torque Máximo","1,39 kgf.m a 6.000 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","5 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","14 litros"],["Óleo do motor","1,2 litro"]],"Dimensões":[["Comprimento","2.039 mm"],["Altura do assento","793 mm"],["Peso seco","142 kg"]],"Ciclística":[["Freio dianteiro","Disco hidráulico – ABS"],["Freio traseiro","Disco hidráulico"],["Suspensão dianteira","Telescópica"],["Suspensão traseira","Mono Shock"]]}},
+ fichas:{
+  "Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","14,4 cv (gas.) / 14,7 cv (etanol) a 8.000 rpm"],["Torque Máximo","1,41 kgf.m (gas.) / 1,43 kgf.m (etanol) a 6.750 rpm"],["Transmissão","5 velocidades"],["Sistema de Partida","Elétrica"],["Diâmetro x Curso","57,3 x 63,0 mm"],["Relação de Compressão","9,5:1"],["Sistema Alimentação","Injeção Eletrônica PGM-FI FlexOne"],["Combustível","Gasolina e/ou Etanol"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V - 4 Ah"],["Farol","LED"],["Entrada USB-C","Sim (de série)"]],
+  "Capacidade":[["Tanque de Combustível","14,0 litros (res. 2,5 litros)"],["Óleo do Motor","1,2 litro (1,0 litro/troca)"]],
+  "Dimensões":[["Comprimento x Largura x Altura","2030 x 747 x 1094 mm"],["Distância entre eixos","1311 mm"],["Distância mínima do solo","190 mm"],["Altura do assento","796 mm"],["Peso Seco","120 kg"]],
+  "Chassi":[["Tipo","Diamond Frame"],["Suspensão Dianteira/Curso","Garfo telescópico 33mm / 120 mm"],["Suspensão Traseira/Curso","Dois amortecedores / 106 mm"],["Freio Dianteiro/Diâmetro","A disco / 240 mm – ABS"],["Freio Traseiro/Diâmetro","A disco / 220 mm"],["Pneu Dianteiro","80/100 - 18M/C 47S"],["Pneu Traseiro","100/80 - 18M/C 59S"]]}},
 
 {nome:"CG 160 Cargo",tipo:"City",lancamento:false,
  img:HB+"2025-08/Imagem-Home-CG%20160-Cargo-Branco_0.webp",
  url:WH+"cg-160-cargo",
  cores:[
   {nome:"Branco Ross White",img:HB+"2025-08/Imagem-Home-CG%20160-Cargo-Branco_0.webp"}],
- fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","12,3 cv a 8.000 rpm"],["Torque Máximo","1,38 kgf.m a 5.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","5 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","14 litros"],["Óleo do motor","1,2 litro"]],"Dimensões":[["Comprimento","2.100 mm"],["Altura do assento","793 mm"],["Peso seco","148 kg"],["Capacidade baú traseiro","Até 30 kg"]],"Ciclística":[["Freio dianteiro","Disco hidráulico – CBS"],["Freio traseiro","Tambor – CBS"],["Suspensão dianteira","Telescópica"],["Suspensão traseira","Mono Shock"]]}},
+ fichas:{
+  "Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","14,4 cv (gas.) / 14,7 cv (etanol) a 8.000 rpm"],["Torque Máximo","1,41 kgf.m (gas.) / 1,43 kgf.m (etanol) a 6.750 rpm"],["Transmissão","5 velocidades"],["Sistema de Partida","Elétrica"],["Diâmetro x Curso","57,3 x 63,1 mm"],["Relação de Compressão","9,5:1"],["Sistema Alimentação","Injeção Eletrônica PGM-FI FlexOne"],["Combustível","Gasolina e/ou Etanol"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V - 4 Ah"],["Farol","35/35 W"]],
+  "Capacidade":[["Tanque de Combustível","14,0 litros (res. 2,5 litros)"],["Óleo do Motor","1,2 litro (1,0 litro/troca)"],["Bagageiro","Homologado 20 kg"]],
+  "Dimensões":[["Comprimento x Largura x Altura","2030 x 751 x 1094 mm"],["Distância entre eixos","1311 mm"],["Distância mínima do solo","170 mm"],["Altura do assento","796 mm"],["Peso Seco","122 kg"]],
+  "Chassi":[["Tipo","Diamond Frame"],["Suspensão Dianteira/Curso","Garfo telescópico 33mm / 120 mm (reforçada)"],["Suspensão Traseira/Curso","Dois amortecedores / 106 mm (reforçada)"],["Freio Dianteiro/Diâmetro","A disco / 240 mm – CBS"],["Freio Traseiro/Diâmetro","A tambor / 130 mm – CBS"],["Pneu Dianteiro","80/100 - 18M/C 47S"],["Pneu Traseiro","80/100 - 18M/C 47S"]]}},
 
 {nome:"CG 50 Anos",tipo:"City",lancamento:true,
  img:HB+"2026-02/Moto-cg-vis%C3%A3o-lateral-direita.webp",
  url:WH+"cg-50-anos",
  cores:[{nome:"Edição Especial 50 Anos",img:HB+"2026-02/Moto-cg-vis%C3%A3o-lateral-direita.webp"}],
- fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","12,4 cv a 8.000 rpm"],["Torque Máximo","1,39 kgf.m a 6.000 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","5 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","14 litros"]],"Dimensões":[["Altura do assento","793 mm"],["Peso seco","142 kg"]],"Ciclística":[["Freio dianteiro","Disco hidráulico – ABS"],["Freio traseiro","Disco hidráulico"]]}},
+ fichas:{
+  "Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","14,4 cv (gas.) / 14,7 cv (etanol) a 8.000 rpm"],["Torque Máximo","1,41 kgf.m (gas.) / 1,43 kgf.m (etanol) a 6.750 rpm"],["Transmissão","5 velocidades"],["Sistema de Partida","Elétrica"],["Sistema Alimentação","Injeção Eletrônica PGM-FI FlexOne"],["Combustível","Gasolina e/ou Etanol"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V - 4 Ah"],["Farol","LED"],["Entrada USB-C","Sim"]],
+  "Capacidade":[["Tanque de Combustível","14,0 litros (res. 2,5 litros)"],["Óleo do Motor","1,2 litro (1,0 litro/troca)"]],
+  "Dimensões":[["Comprimento x Largura x Altura","2030 x 747 x 1094 mm"],["Distância entre eixos","1311 mm"],["Altura do assento","796 mm"],["Peso Seco","120 kg"]],
+  "Chassi":[["Tipo","Diamond Frame"],["Suspensão Dianteira/Curso","Garfo telescópico 33mm / 120 mm"],["Suspensão Traseira/Curso","Dois amortecedores / 106 mm"],["Freio Dianteiro/Diâmetro","A disco / 240 mm – ABS"],["Freio Traseiro/Diâmetro","A disco / 220 mm"],["Pneu Dianteiro","80/100 - 18M/C 47S"],["Pneu Traseiro","100/80 - 18M/C 59S"]]}},
 
-/* ==================== SCOOTER ==================== */
+// ==================== SCOOTER ====================
 {nome:"Elite 125",tipo:"Scooter",lancamento:false,
  img:HB+"2026-02/scooter-honda-roxa-vista-lateral.webp",
  url:WH+"elite-125",
@@ -318,7 +333,12 @@ const motos=[
   {nome:"Vermelho Metálico - Pearl Royalty Red",img:HB+"2026-02/Scooter%20Honda%20vermelha%20vis%C3%A3o%20lateral_0.webp"},
   {nome:"Cinza Mat - Mat Cynos Gray",img:HB+"2026-02/scooter%20honda%20cinza%20perolizado%20vista%20lateral.webp"},
   {nome:"Cinza Perolizado - Pearl Stark Gray",img:HB+"2026-02/scooter%20honda%20cinza%20met%C3%A1lico%20vista%20lateral.webp"}],
- fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","124,9 cc"],["Potência Máxima","8,7 cv a 7.500 rpm"],["Torque Máximo","0,97 kgf.m a 5.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","Automática (CVT)"],["Partida","Elétrica"]],"Capacidade":[["Tanque","6 litros"],["Porta-objetos","18 litros"]],"Dimensões":[["Comprimento","1.905 mm"],["Altura do assento","760 mm"],["Peso seco","116 kg"]],"Ciclística":[["Freio dianteiro","Disco hidráulico – CBS"],["Freio traseiro","Tambor – CBS"],["Pneu dianteiro","90/90-12"],["Pneu traseiro","100/90-10"]]}},
+ fichas:{
+  "Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","123,9 cc"],["Potência Máxima","8,2 cv a 6.250 rpm"],["Torque Máximo","1,06 kgf.m a 5.000 rpm"],["Transmissão","Automática (V-Matic/CVT)"],["Sistema de Partida","Elétrica"],["Sistema Alimentação","Injeção Eletrônica PGM-FI"],["Combustível","Gasolina"],["Idling Stop","Sim"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V – 5 Ah"],["Farol","LED"]],
+  "Capacidade":[["Tanque de Combustível","5,3 litros"],["Óleo do Motor","0,75 litro (0,55 litro/troca)"],["Porta-objetos","18 litros"]],
+  "Dimensões":[["Comprimento x Largura x Altura","1830 x 707 x 1172 mm"],["Distância entre eixos","1260 mm"],["Distância mínima do solo","171 mm"],["Altura do assento","765 mm"],["Peso Seco","100 kg"]],
+  "Chassi":[["Tipo","Monobloco (underbone)"],["Suspensão Dianteira/Curso","Garfo telescópico / 90 mm"],["Suspensão Traseira/Curso","Monoamortecida / 70 mm"],["Freio Dianteiro/Diâmetro","A disco / 159,8 mm – CBS"],["Freio Traseiro/Diâmetro","A tambor / 130 mm – CBS"],["Pneu Dianteiro","90/90 - 12"],["Pneu Traseiro","100/90 - 10"]]}},
 
 {nome:"PCX",tipo:"Scooter",lancamento:false,
  img:HB+"2025-08/imagem-home-honda-pcx-branco_0.webp",
@@ -326,41 +346,39 @@ const motos=[
  cores:[
   {nome:"Branco Perolizado - Pearl Hakuji White",img:HB+"2025-08/imagem-home-honda-pcx-branco_0.webp"},
   {nome:"Vermelho Perolizado - Pearl Siena Red",img:HB+"2025-08/imagem-home-honda-pcx-vermelha_0.webp"}],
- fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","156,9 cc"],["Potência Máxima","16,0 cv a 8.500 rpm"],["Torque Máximo","1,5 kgf.m a 6.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","Automática (CVT)"],["Smart Key","Sim"],["Idling Stop","Sim"],["Partida","Elétrica"]],"Capacidade":[["Tanque","8,1 litros"],["Porta-objetos","30 litros (2 capacetes)"],["Entrada USB-C","Sim"]],"Dimensões":[["Comprimento","1.930 mm"],["Altura do assento","764 mm"],["Peso seco","134 kg"]],"Ciclística":[["Freio dianteiro","Disco 220mm – CBS"],["Freio traseiro","Disco 190mm – CBS"],["Pneu","14 polegadas"]]}},
-/*
-{nome:"PCX ABS",tipo:"Scooter",lancamento:false,
- img:HB+"2025-08/visao-da-lateral-direita-da-moto-honda-pcx-preta_0.webp",
- url:WH+"pcx",
- cores:[
-  {nome:"Preto Perolizado - Pearl Morion Black",img:HB+"2025-08/visao-da-lateral-direita-da-moto-honda-pcx-preta_0.webp"},
-  {nome:"Cinza Metálico - Mat Cynos Gray",img:HB+"2025-08/visao-da-lateral-direita-da-moto-honda-pcx-cinza_0.webp"},
-  {nome:"Branco Perolizado - Pearl Hakuji White",img:HB+"2025-08/imagem-home-honda-pcx-branco_0.webp"}],
- fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","156,9 cc"],["Potência Máxima","16,0 cv a 8.500 rpm"],["Torque Máximo","1,5 kgf.m a 6.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","Automática (CVT)"],["Smart Key","Sim"],["Idling Stop","Sim"],["Partida","Elétrica"]],"Capacidade":[["Tanque","8,1 litros"],["Porta-objetos","30 litros (2 capacetes)"],["Entrada USB-C","Sim"]],"Dimensões":[["Comprimento","1.930 mm"],["Altura do assento","764 mm"],["Peso seco","136 kg"]],"Ciclística":[["Freio dianteiro","Disco 220mm – ABS"],["Freio traseiro","Disco 190mm – ABS"],["Controle de tração (HSTC)","Sim"],["Pneu","14 polegadas"]]}},
+ fichas:{
+  "Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a líquido"],["Cilindrada","156,9 cc"],["Potência Máxima","16 cv a 8.500 rpm"],["Torque Máximo","1,5 kgf.m a 6.500 rpm"],["Transmissão","Automática (V-Matic/CVT)"],["Sistema de Partida","Elétrica"],["Diâmetro x Curso","60,0 x 55,5 mm"],["Relação de Compressão","12,0:1"],["Sistema Alimentação","Injeção Eletrônica PGM-FI"],["Combustível","Gasolina"],["Idling Stop","Sim"],["Smart Key","Sim"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V – 5 Ah"],["Farol","LED"]],
+  "Capacidade":[["Tanque de Combustível","8 litros"],["Óleo do Motor","0,9 litro"],["Porta-objetos","30 litros (2 capacetes)"],["Entrada USB-C","Sim"]],
+  "Dimensões":[["Comprimento x Largura x Altura","1935 x 742 x 1108 mm"],["Distância entre eixos","1313 mm"],["Distância mínima do solo","134 mm"],["Altura do assento","764 mm"],["Peso Seco","124 kg (CBS) / 126 kg (ABS)"]],
+  "Chassi":[["Tipo","Monobloco (underbone)"],["Suspensão Dianteira/Curso","Garfo telescópico / 100 mm"],["Suspensão Traseira/Curso","Dois amortecedores / 100 mm"],["Freio Dianteiro/Diâmetro","A disco / 220 mm – CBS"],["Freio Traseiro/Diâmetro","A tambor / 130 mm – CBS"],["Pneu Dianteiro","110/70 – 14"],["Pneu Traseiro","130/70 – 13"]]}},
 
-{nome:"PCX DLX ABS",tipo:"Scooter",lancamento:false,
- img:HB+"2025-08/visao-da-lateral-direita-da-moto-honda-pcx-dlx_0.webp",
- url:WH+"pcx",
- cores:[
-  {nome:"Prata Metálico - Pearl Glare Silver",img:HB+"2025-08/visao-da-lateral-direita-da-moto-honda-pcx-dlx_0.webp"},
-  {nome:"Preto DLX",img:HB+"2025-08/visao-da-lateral-direita-da-moto-honda-pcx-dlx-preta_0.webp"}],
- fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","156,9 cc"],["Potência Máxima","16,0 cv a 8.500 rpm"],["Transmissão","Automática (CVT)"],["Smart Key","Sim"],["Idling Stop","Sim"]],"Capacidade":[["Tanque","8,1 litros"],["Porta-objetos","30 litros (2 capacetes)"],["Entrada USB-C","Sim"]],"Dimensões":[["Altura do assento","764 mm"],["Peso seco","137 kg"]],"Ciclística":[["Freio dianteiro","Disco 220mm – ABS"],["Freio traseiro","Disco 190mm – ABS"],["Controle de tração (HSTC)","Sim"],["Alarme","Sim"],["Rodas","14 polegadas – Design DLX"]]}},
-*/
 {nome:"Honda ADV",tipo:"Scooter",lancamento:false,
  img:HB+"2025-08/Imagem-home-Honda-ADV-Vermelha-Lateral_0.webp",
  url:WH+"honda-adv",
  cores:[
   {nome:"Vermelho Perolizado - Pearl Siena Red",img:HB+"2025-08/Imagem-home-Honda-ADV-Vermelha-Lateral_0.webp"},
   {nome:"Prata Metálico",img:HB+"2025-08/Imagem-Home-Honda-ADV-Prata-Met%C3%A1lico_0.webp"}],
- fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","156,9 cc"],["Potência Máxima","13,0 cv a 8.500 rpm"],["Torque Máximo","1,4 kgf.m a 5.000 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","Automática (CVT)"],["Partida","Elétrica"]],"Capacidade":[["Tanque","8,1 litros"],["Porta-objetos","21 litros"],["Entrada USB","Sim"]],"Dimensões":[["Comprimento","1.990 mm"],["Largura","790 mm"],["Altura do assento","795 mm"],["Peso seco","135 kg"]],"Ciclística":[["Freio dianteiro","Disco 240mm – ABS"],["Freio traseiro","Disco 220mm – ABS"]]}},
+ fichas:{
+  "Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a líquido"],["Cilindrada","156,9 cc"],["Potência Máxima","16 cv a 8.500 rpm"],["Torque Máximo","1,5 kgf.m a 6.500 rpm"],["Transmissão","Automática (V-Matic/CVT)"],["Sistema de Partida","Elétrica"],["Sistema Alimentação","Injeção Eletrônica PGM-FI"],["Combustível","Gasolina"],["Idling Stop","Sim"],["Smart Key","Sim"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V – 5 Ah"],["Farol","LED"]],
+  "Capacidade":[["Tanque de Combustível","8,1 litros"],["Óleo do Motor","0,9 litro"],["Porta-objetos","21 litros"],["Entrada USB-C","Sim"]],
+  "Dimensões":[["Comprimento x Largura x Altura","1990 x 790 x 1155 mm"],["Distância entre eixos","1330 mm"],["Distância mínima do solo","165 mm"],["Altura do assento","795 mm"],["Peso Seco","135 kg"]],
+  "Chassi":[["Tipo","Monobloco"],["Suspensão Dianteira/Curso","Twin Subtank Showa / 120 mm"],["Suspensão Traseira/Curso","Showa / 100 mm"],["Freio Dianteiro/Diâmetro","A disco / 240 mm – ABS"],["Freio Traseiro/Diâmetro","A disco / 220 mm – ABS"],["Controle de tração (HSTC)","Sim"],["Pneu Dianteiro","110/80 – 14 (misto)"],["Pneu Traseiro","130/70 – 13 (misto)"]]}},
 
-/* ==================== NAKED ==================== */
+// ==================== NAKED ====================
 {nome:"CB 300F Twister CBS",tipo:"Naked",lancamento:false,
  img:HB+"2025-08/Imagem-home-honda-Twister-CBS-Vermelha-Lateral.webp",
  url:WH+"cb-300f-twister",
  cores:[
   {nome:"Vermelho Metálico - Pearl Royalty Red",img:HB+"2025-08/Imagem-home-honda-Twister-CBS-Vermelha-Lateral.webp"},
   {nome:"Cinza Metálico - Mat Cynos Gray",img:HB+"2025-08/Imagem-home-honda-Twister-CBS-Cinza-Lateral.webp"}],
- fichas:{"Motor":[["Tipo","SOHC, Monocilíndrico, 4 válvulas, arrefecido a ar"],["Cilindrada","293,5 cc"],["Potência Máxima","24,7 cv a 7.500 rpm"],["Torque Máximo","2,67 kgf.m a 5.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","6 marchas – Embreagem deslizante assistida"],["Partida","Elétrica"]],"Capacidade":[["Tanque","13 litros"],["Óleo do motor","1,6 litro"]],"Dimensões":[["Comprimento","2.010 mm"],["Altura do assento","800 mm"],["Peso seco","151 kg"]],"Ciclística":[["Freio dianteiro","Disco 296mm – CBS"],["Freio traseiro","Disco 220mm – CBS"],["Suspensão dianteira","Telescópica invertida"],["Pneu dianteiro","110/70-17"],["Pneu traseiro","150/60-17"]]}},
+ fichas:{
+  "Motor":[["Tipo","OHC (SOHC), Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","293,5 cc"],["Potência Máxima","24,5 cv (gas.) / 24,7 cv (etanol) a 7.500 rpm"],["Torque Máximo","2,61 kgf.m a 5.500 rpm"],["Transmissão","6 velocidades – Embreagem deslizante assistida"],["Sistema de Partida","Elétrica"],["Diâmetro x Curso","77,0 x 63,0 mm"],["Relação de Compressão","9,3:1"],["Sistema Alimentação","Injeção Eletrônica PGM-FI FlexOne"],["Combustível","Gasolina e/ou Etanol"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V – 5 Ah"],["Farol","LED (Full LED)"]],
+  "Capacidade":[["Tanque de Combustível","14,1 litros"],["Óleo do Motor","2,0 litros (1,5 litros/troca)"]],
+  "Dimensões":[["Comprimento x Largura x Altura","2065 x 753 x 1072 mm"],["Distância entre eixos","1386 mm"],["Distância mínima do solo","192 mm"],["Altura do assento","784 mm"],["Peso Seco","137 kg"]],
+  "Chassi":[["Tipo","Diamond Frame"],["Suspensão Dianteira/Curso","Garfo telescópico 41mm / 130 mm"],["Suspensão Traseira/Curso","Mono Shock (Pro-Link) / 108 mm"],["Freio Dianteiro/Diâmetro","A disco / 276 mm – CBS"],["Freio Traseiro/Diâmetro","A disco / 220 mm – CBS"],["Pneu Dianteiro","110/70 - 17"],["Pneu Traseiro","150/60 - 17"]]}},
 
 {nome:"CB 300F Twister ABS",tipo:"Naked",lancamento:false,
  img:HB+"2025-08/Imagem-home-honda-Twister-ABS-Azul-Lateral_0.webp",
@@ -368,7 +386,12 @@ const motos=[
  cores:[
   {nome:"Azul Metálico - Mat Gunpowder Blue",img:HB+"2025-08/Imagem-home-honda-Twister-ABS-Azul-Lateral_0.webp"},
   {nome:"Vermelho Metálico",img:HB+"2025-08/Imagem-home-honda-Twister-ABS-Vermelho-Lateral_0.webp"}],
- fichas:{"Motor":[["Tipo","SOHC, Monocilíndrico, 4 válvulas, arrefecido a ar"],["Cilindrada","293,5 cc"],["Potência Máxima","24,7 cv a 7.500 rpm"],["Torque Máximo","2,67 kgf.m a 5.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","6 marchas – Embreagem deslizante assistida"],["Partida","Elétrica"]],"Capacidade":[["Tanque","13 litros"],["Óleo do motor","1,6 litro"]],"Dimensões":[["Comprimento","2.010 mm"],["Altura do assento","800 mm"],["Peso seco","153 kg"]],"Ciclística":[["Freio dianteiro","Disco 296mm – ABS"],["Freio traseiro","Disco 220mm – CBS"],["Suspensão dianteira","Telescópica invertida"],["Pneu dianteiro","110/70-17"],["Pneu traseiro","150/60-17"]]}},
+ fichas:{
+  "Motor":[["Tipo","OHC (SOHC), Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","293,5 cc"],["Potência Máxima","24,5 cv (gas.) / 24,7 cv (etanol) a 7.500 rpm"],["Torque Máximo","2,61 kgf.m a 5.500 rpm"],["Transmissão","6 velocidades – Embreagem deslizante assistida"],["Sistema de Partida","Elétrica"],["Diâmetro x Curso","77,0 x 63,0 mm"],["Relação de Compressão","9,3:1"],["Sistema Alimentação","Injeção Eletrônica PGM-FI FlexOne"],["Combustível","Gasolina e/ou Etanol"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V – 5 Ah"],["Farol","LED (Full LED)"]],
+  "Capacidade":[["Tanque de Combustível","14,1 litros"],["Óleo do Motor","2,0 litros (1,5 litros/troca)"]],
+  "Dimensões":[["Comprimento x Largura x Altura","2065 x 753 x 1072 mm"],["Distância entre eixos","1386 mm"],["Distância mínima do solo","192 mm"],["Altura do assento","784 mm"],["Peso Seco","137 kg"]],
+  "Chassi":[["Tipo","Diamond Frame"],["Suspensão Dianteira/Curso","Garfo telescópico 41mm / 130 mm"],["Suspensão Traseira/Curso","Mono Shock (Pro-Link) / 108 mm"],["Freio Dianteiro/Diâmetro","A disco / 276 mm – ABS"],["Freio Traseiro/Diâmetro","A disco / 220 mm – CBS"],["Pneu Dianteiro","110/70 - 17"],["Pneu Traseiro","150/60 - 17"]]}},
 
 {nome:"CB 500 Hornet",tipo:"Naked",lancamento:true,
  img:HB+"2025-08/Imagem-home-honda-Hornet500-Vermelha-Lateral.webp",
@@ -377,7 +400,12 @@ const motos=[
   {nome:"Vermelho – Victory Red",img:HB+"2025-08/Imagem-home-honda-Hornet500-Vermelha-Lateral.webp"},
   {nome:"Branco Perolizado – Pearl Andes White",img:HB+"2025-08/Imagem-home-honda-Hornet500-Branca-Lateral_0.webp"},
   {nome:"Preto Perolizado – Pearl Basalto Black",img:HB+"2025-08/Imagem-home-honda-Hornet500-Preta-Lateral_0.webp"}],
- fichas:{"Motor":[["Tipo","Bicilíndrico em linha, DOHC, arrefecido a água"],["Cilindrada","471 cc"],["Potência Máxima","50,2 cv a 9.500 rpm"],["Torque Máximo","4,56 kgf.m a 7.750 rpm"],["Transmissão","6 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","15,2 litros"]],"Dimensões":[["Altura do assento","826 mm"],["Peso seco","196 kg"]],"Ciclística":[["Freio dianteiro","Disco – ABS Cornering"],["Freio traseiro","Disco – ABS"],["Suspensão dianteira","Telescópica invertida Showa SFF-BP 41mm"],["Modos de pilotagem","Sport, Standard, Rain, User"],["Controle de tração","Sim"],["Painel","TFT 5 polegadas"]]}},
+ fichas:{
+  "Motor":[["Tipo","Bicilíndrico em linha, DOHC, arrefecido a água"],["Cilindrada","471 cc"],["Potência Máxima","50,2 cv a 9.500 rpm"],["Torque Máximo","4,56 kgf.m a 7.750 rpm"],["Transmissão","6 velocidades"],["Sistema de Partida","Elétrica"],["Sistema Alimentação","Injeção Eletrônica PGM-FI"],["Combustível","Gasolina"],["Modos de pilotagem","Sport, Standard, Rain, User"],["Controle de tração","Sim (HSTC)"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V – 8 Ah"],["Farol","LED"],["Painel","TFT 5 polegadas"]],
+  "Capacidade":[["Tanque de Combustível","15,2 litros"],["Óleo do Motor","~3,8 litros"]],
+  "Dimensões":[["Comprimento x Largura x Altura","2075 x 770 x 1085 mm"],["Distância entre eixos","1435 mm"],["Altura do assento","826 mm"],["Peso Seco","196 kg"]],
+  "Chassi":[["Tipo","Duplo berço de aço"],["Suspensão Dianteira/Curso","Garfo invertido Showa SFF-BP 41mm / 120 mm"],["Suspensão Traseira/Curso","Mono Shock / 130 mm"],["Freio Dianteiro/Diâmetro","A disco / 310 mm – ABS Cornering"],["Freio Traseiro/Diâmetro","A disco / 240 mm – ABS"],["Pneu Dianteiro","120/70 ZR 17"],["Pneu Traseiro","160/60 ZR 17"]]}},
 
 {nome:"CB 650R E-Clutch",tipo:"Naked",lancamento:true,
  img:HB+"2025-08/Imagem-Home-da-Moto-Honda-CB-650R-Vermelho-Perolizado_0.webp",
@@ -386,7 +414,12 @@ const motos=[
   {nome:"Vermelho Perolizado - Pearl Siena Red",img:HB+"2025-08/Imagem-Home-da-Moto-Honda-CB-650R-Vermelho-Perolizado_0.webp"},
   {nome:"Azul Perolizado - Pearl Spencer Blue",img:HB+"2025-08/Imagem-Home-da-Moto-Honda-CB-650R-Azul-Perolizado.webp"},
   {nome:"Cinza Fosco – Mat Crow Gray Metallic",img:HB+"2025-08/Imagem-Home-da-Moto-Honda-CB-650R-Cinza-Fosco.webp"}],
- fichas:{"Motor":[["Tipo","Inline-4, DOHC, arrefecido a água"],["Cilindrada","648,7 cc"],["Potência Máxima","95 cv a 12.000 rpm"],["Torque Máximo","6,50 kgf.m a 8.000 rpm"],["Transmissão","6 marchas + E-Clutch (embreagem automática)"],["Partida","Elétrica"]],"Capacidade":[["Tanque","15,4 litros"]],"Dimensões":[["Altura do assento","810 mm"],["Peso seco","202 kg"]],"Ciclística":[["Freio dianteiro","Disco Dual – ABS"],["Freio traseiro","Disco – ABS"],["Suspensão dianteira","Telescópica invertida"],["E-Clutch","Troca de marchas sem embreagem manual"],["Controle de tração","Sim"],["Painel","TFT"]]}},
+ fichas:{
+  "Motor":[["Tipo","Inline-4, DOHC, arrefecido a água"],["Cilindrada","648,7 cc"],["Potência Máxima","95 cv a 12.000 rpm"],["Torque Máximo","6,50 kgf.m a 8.000 rpm"],["Transmissão","6 marchas + E-Clutch (embreagem automática)"],["Sistema de Partida","Elétrica"],["Sistema Alimentação","Injeção Eletrônica PGM-FI"],["Combustível","Gasolina"],["Controle de tração","Sim"],["E-Clutch","Troca de marchas sem acionar embreagem"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V – 8 Ah"],["Farol","LED"],["Painel","TFT"]],
+  "Capacidade":[["Tanque de Combustível","15,4 litros"],["Óleo do Motor","~4,0 litros"]],
+  "Dimensões":[["Comprimento x Largura x Altura","2120 x 780 x 1085 mm"],["Distância entre eixos","1450 mm"],["Altura do assento","810 mm"],["Peso Seco","202 kg"]],
+  "Chassi":[["Tipo","Duplo berço de aço"],["Suspensão Dianteira/Curso","Garfo invertido 41mm / 120 mm"],["Suspensão Traseira/Curso","Mono Shock / 120 mm"],["Freio Dianteiro/Diâmetro","A disco dual / 310 mm – ABS Cornering"],["Freio Traseiro/Diâmetro","A disco / 240 mm – ABS"],["Pneu Dianteiro","120/70 ZR 17"],["Pneu Traseiro","180/55 ZR 17"]]}},
 
 {nome:"CB 750 Hornet",tipo:"Naked",lancamento:false,
  img:HB+"2025-10/360-site-16fr_MLBF_Hornet75000_3.webp",
@@ -394,16 +427,26 @@ const motos=[
  cores:[
   {nome:"Branco Perolizado - Mat Pearl Glare White",img:HB+"2025-10/360-site-16fr_MLBF_Hornet75000_3.webp"},
   {nome:"Preto Fosco – Mat Ballistic Black Metallic",img:HB+"2025-10/360-site-16fr_MLBF_Hornet75000.webp"}],
- fichas:{"Motor":[["Tipo","Bicilíndrico em linha, DOHC, arrefecido a água"],["Cilindrada","755 cc"],["Potência Máxima","91 cv a 9.500 rpm"],["Torque Máximo","75 Nm a 7.250 rpm"],["Transmissão","6 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","15,4 litros"]],"Dimensões":[["Altura do assento","795 mm"],["Peso seco","202 kg"]],"Ciclística":[["Freio dianteiro","Disco Dual – ABS Cornering"],["Freio traseiro","Disco – ABS"],["Suspensão dianteira","Telescópica invertida"],["Controle de tração HSTC","3 níveis + desligável"],["Modos de pilotagem","Sport, Standard, Rain, User"],["Painel","TFT 5 polegadas – RoadSync"]]}},
+ fichas:{
+  "Motor":[["Tipo","Bicilíndrico em linha, DOHC, arrefecido a água"],["Cilindrada","755 cc"],["Potência Máxima","91 cv a 9.500 rpm"],["Torque Máximo","75 Nm (7,65 kgf.m) a 7.250 rpm"],["Transmissão","6 velocidades"],["Sistema de Partida","Elétrica"],["Sistema Alimentação","Injeção Eletrônica PGM-FI"],["Combustível","Gasolina"],["Modos de pilotagem","Sport, Standard, Rain, User"],["Controle de tração (HSTC)","3 níveis + desligável"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V – 8 Ah"],["Farol","LED"],["Painel","TFT 5 polegadas – RoadSync"]],
+  "Capacidade":[["Tanque de Combustível","15,4 litros"],["Óleo do Motor","~4,0 litros"]],
+  "Dimensões":[["Comprimento x Largura x Altura","2090 x 785 x 1085 mm"],["Distância entre eixos","1455 mm"],["Altura do assento","795 mm"],["Peso Seco","202 kg"]],
+  "Chassi":[["Tipo","Duplo berço de aço"],["Suspensão Dianteira/Curso","Showa SFF-A 41mm / 120 mm"],["Suspensão Traseira/Curso","Mono Shock / 130 mm"],["Freio Dianteiro/Diâmetro","A disco / 310 mm – ABS Cornering"],["Freio Traseiro/Diâmetro","A disco / 240 mm – ABS"],["Pneu Dianteiro","120/70 ZR 17"],["Pneu Traseiro","180/55 ZR 17"]]}},
 
-/* ==================== TRAIL ==================== */
+// ==================== TRAIL ====================
 {nome:"NXR 160 Bros CBS",tipo:"Trail",lancamento:false,
  img:HB+"2025-08/Imagem-Home-Honda-NXR-160-Bros-CBS-Vermelha-Fighting-Red.webp",
  url:WH+"nxr-160-bros",
  cores:[
   {nome:"Vermelho - Fighting Red",img:HB+"2025-08/Imagem-Home-Honda-NXR-160-Bros-CBS-Vermelha-Fighting-Red.webp"},
   {nome:"Azul - Universe Blue",img:HB+"2025-08/Imagem-Home-Honda-NXR-160-Bros-CBS-Azul-Universe-Blue.webp"}],
- fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","14,3 cv a 8.000 rpm"],["Torque Máximo","1,45 kgf.m a 6.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","5 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","12 litros"],["Óleo do motor","1,2 litro"],["USB-C","Sim"]],"Dimensões":[["Comprimento","2.067 mm"],["Altura do assento","836 mm"],["Peso seco","125 kg"],["Clearance","247 mm"]],"Ciclística":[["Freio dianteiro","Disco 240mm – CBS"],["Freio traseiro","Disco 220mm – CBS"],["Suspensão dianteira","Garfo telescópico 33mm – 180mm"],["Pneu dianteiro","90/90-19"],["Pneu traseiro","110/90-17"]]}},
+ fichas:{
+  "Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","14,2 cv (gas.) / 14,3 cv (etanol) a 8.000 rpm"],["Torque Máximo","1,44 kgf.m (gas.) / 1,45 kgf.m (etanol) a 5.500 rpm"],["Transmissão","5 velocidades"],["Sistema de Partida","Elétrica"],["Diâmetro x Curso","57,3 x 63,1 mm"],["Relação de Compressão","9,5:1"],["Sistema Alimentação","Injeção Eletrônica PGM-FI FlexOne"],["Combustível","Gasolina e/ou Etanol"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V – 4 Ah"],["Farol","LED"],["Entrada USB-C","Sim"]],
+  "Capacidade":[["Tanque de Combustível","12 litros"],["Óleo do Motor","1,2 litro (1,0 litro/troca)"]],
+  "Dimensões":[["Comprimento x Largura x Altura","2067 x 810 x 1151 mm"],["Distância entre eixos","1356 mm"],["Distância mínima do solo","247 mm"],["Altura do assento","836 mm"],["Peso Seco","125 kg"]],
+  "Chassi":[["Tipo","Berço Semi-duplo"],["Suspensão Dianteira/Curso","Garfo telescópico 33mm / 180 mm"],["Suspensão Traseira/Curso","Mono Shock / 150 mm"],["Freio Dianteiro/Diâmetro","A disco / 240 mm – CBS"],["Freio Traseiro/Diâmetro","A disco / 220 mm – CBS"],["Pneu Dianteiro","90/90 - 19M/C 52P"],["Pneu Traseiro","110/90 - 17M/C 60P"]]}},
 
 {nome:"NXR 160 Bros ABS",tipo:"Trail",lancamento:false,
  img:HB+"2025-08/Imagem-Home-Honda-NXR-160-Bros-ABS-Cinza-Tempestade-Gray_0.webp",
@@ -411,7 +454,12 @@ const motos=[
  cores:[
   {nome:"Cinza Tempestade",img:HB+"2025-08/Imagem-Home-Honda-NXR-160-Bros-ABS-Cinza-Tempestade-Gray_0.webp"},
   {nome:"Vermelho - Fighting Red",img:HB+"2025-08/Imagem-Home-Honda-NXR-160-Bros-ABS-Vermelho_0.webp"}],
- fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","14,3 cv a 8.000 rpm"],["Torque Máximo","1,45 kgf.m a 6.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","5 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","12 litros"],["Óleo do motor","1,2 litro"],["USB-C","Sim"]],"Dimensões":[["Comprimento","2.067 mm"],["Altura do assento","836 mm"],["Peso seco","127 kg"],["Clearance","247 mm"]],"Ciclística":[["Freio dianteiro","Disco 240mm – ABS"],["Freio traseiro","Disco 220mm"],["Suspensão dianteira","Garfo telescópico 33mm – 180mm"],["Pneu dianteiro","90/90-19"],["Pneu traseiro","110/90-17"]]}},
+ fichas:{
+  "Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","162,7 cc"],["Potência Máxima","14,2 cv (gas.) / 14,3 cv (etanol) a 8.000 rpm"],["Torque Máximo","1,44 kgf.m (gas.) / 1,45 kgf.m (etanol) a 5.500 rpm"],["Transmissão","5 velocidades"],["Sistema de Partida","Elétrica"],["Diâmetro x Curso","57,3 x 63,1 mm"],["Relação de Compressão","9,5:1"],["Sistema Alimentação","Injeção Eletrônica PGM-FI FlexOne"],["Combustível","Gasolina e/ou Etanol"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V – 4 Ah"],["Farol","LED"],["Entrada USB-C","Sim"]],
+  "Capacidade":[["Tanque de Combustível","12 litros"],["Óleo do Motor","1,2 litro (1,0 litro/troca)"]],
+  "Dimensões":[["Comprimento x Largura x Altura","2067 x 810 x 1151 mm"],["Distância entre eixos","1356 mm"],["Distância mínima do solo","247 mm"],["Altura do assento","836 mm"],["Peso Seco","127 kg"]],
+  "Chassi":[["Tipo","Berço Semi-duplo"],["Suspensão Dianteira/Curso","Garfo telescópico 33mm / 180 mm"],["Suspensão Traseira/Curso","Mono Shock / 150 mm"],["Freio Dianteiro/Diâmetro","A disco / 240 mm – ABS"],["Freio Traseiro/Diâmetro","A disco / 220 mm"],["Pneu Dianteiro","90/90 - 19M/C 52P"],["Pneu Traseiro","110/90 - 17M/C 60P"]]}},
 
 {nome:"XRE 190",tipo:"Trail",lancamento:false,
  img:HB+"2025-08/imagem-home-honda-xre-190-lateral-cinza_0.webp",
@@ -419,7 +467,12 @@ const motos=[
  cores:[
   {nome:"Cinza Metálico",img:HB+"2025-08/imagem-home-honda-xre-190-lateral-cinza_0.webp"},
   {nome:"Vermelho Fighting Red",img:HB+"2025-08/imagem-home-honda-xre-190-lateral-vermelho_0.webp"}],
- fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","184,4 cc"],["Potência Máxima","18,6 cv a 8.500 rpm"],["Torque Máximo","1,73 kgf.m a 6.000 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","5 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","14 litros"],["Óleo do motor","1,2 litro"]],"Dimensões":[["Comprimento","2.100 mm"],["Altura do assento","830 mm"],["Peso seco","134 kg"],["Clearance","250 mm"]],"Ciclística":[["Freio dianteiro","Disco 240mm – CBS"],["Freio traseiro","Tambor"],["Suspensão dianteira","Telescópica 33mm"],["Pneu dianteiro","90/90-21"],["Pneu traseiro","120/80-18"]]}},
+ fichas:{
+  "Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","184,4 cc"],["Potência Máxima","15,9 cv (gas.) / 16,0 cv (etanol) a 8.000 rpm"],["Torque Máximo","1,65 kgf.m (gas.) / 1,66 kgf.m (etanol) a 6.000 rpm"],["Transmissão","5 velocidades"],["Sistema de Partida","Elétrica"],["Diâmetro x Curso","61,0 x 63,1 mm"],["Relação de Compressão","9,5:1"],["Sistema Alimentação","Injeção Eletrônica PGM-FI FlexOne"],["Combustível","Gasolina e/ou Etanol"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V – 5 Ah"],["Farol","LED"],["Entrada USB-C","Sim"]],
+  "Capacidade":[["Tanque de Combustível","12 litros (res. 2,9 litros)"],["Óleo do Motor","1,2 litro (1,0 litro/troca)"]],
+  "Dimensões":[["Comprimento x Largura x Altura","2075 x 821 x 1167 mm"],["Distância entre eixos","1356 mm"],["Distância mínima do solo","243 mm"],["Altura do assento","836 mm"],["Peso Seco","128 kg"]],
+  "Chassi":[["Tipo","Semi Berço Duplo"],["Suspensão Dianteira/Curso","Garfo telescópico 33mm / 180 mm"],["Suspensão Traseira/Curso","Mono Shock / 150 mm"],["Freio Dianteiro/Diâmetro","A disco / 240 mm – ABS"],["Freio Traseiro/Diâmetro","A disco / 220 mm"],["Pneu Dianteiro","90/90 - 19M/C 52P"],["Pneu Traseiro","110/90 - 17M/C 60P"]]}},
 
 {nome:"XRE 300 Sahara",tipo:"Trail",lancamento:false,
  img:HB+"2025-08/Imagem-Home-Sahara-300-Cinza-Met%C3%A1lico.webp",
@@ -427,7 +480,12 @@ const motos=[
  cores:[
   {nome:"Cinza Metálico",img:HB+"2025-08/Imagem-Home-Sahara-300-Cinza-Met%C3%A1lico.webp"},
   {nome:"Bege Metálico",img:HB+"2025-08/Imagem-Home-Sahara-300-Adventure-Bege%20Met%C3%A1lico_0.webp"}],
- fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","291,6 cc"],["Potência Máxima","24,3 cv a 8.500 rpm"],["Torque Máximo","2,61 kgf.m a 6.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","6 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","13,7 litros"],["Óleo do motor","2,0 litros"],["USB-C","Sim"]],"Dimensões":[["Comprimento","2.210 mm"],["Altura do assento","855 mm"],["Peso seco","160 kg"],["Clearance","260 mm"]],"Ciclística":[["Freio dianteiro","Disco 276mm – ABS"],["Freio traseiro","Disco 220mm – ABS"],["Suspensão dianteira","Telescópica invertida 43mm"],["Pneu dianteiro","100/90-19"],["Pneu traseiro","130/80-17"]]}},
+ fichas:{
+  "Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","293,5 cc"],["Potência Máxima","24,8 cv (gas.) / 25,2 cv (etanol) a 7.500 rpm"],["Torque Máximo","2,70 kgf.m (gas.) / 2,74 kgf.m (etanol) a 5.750 rpm"],["Transmissão","6 velocidades"],["Sistema de Partida","Elétrica"],["Diâmetro x Curso","77,0 x 63,0 mm"],["Relação de Compressão","9,3:1"],["Sistema Alimentação","Injeção Eletrônica PGM-FI FlexOne"],["Combustível","Gasolina e/ou Etanol"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V - 5 Ah"],["Farol","LED"],["Entrada USB-C","Sim"]],
+  "Capacidade":[["Tanque de Combustível","13,8 litros (res. 2,6 litros)"],["Óleo do Motor","2,0 litros (1,5 litros/troca)"]],
+  "Dimensões":[["Comprimento x Largura x Altura","2193 x 829 x 1270 mm"],["Distância entre eixos","1425 mm"],["Distância mínima do solo","269 mm"],["Altura do assento","859 mm"],["Peso Seco","147 kg (ABS)"]],
+  "Chassi":[["Tipo","Semi berço duplo"],["Suspensão Dianteira/Curso","Garfo telescópico / 245 mm"],["Suspensão Traseira/Curso","Pro-Link / 225 mm"],["Freio Dianteiro/Diâmetro","A disco / 256 mm – ABS"],["Freio Traseiro/Diâmetro","A disco / 220 mm – ABS"],["Pneu Dianteiro","90/90-21 M/C 54S"],["Pneu Traseiro","120/80-18 M/C 62S"]]}},
 
 {nome:"XR 300L Tornado",tipo:"Trail",lancamento:false,
  img:HB+"2025-08/Imagem-Home-XR-300L-Tornado-Vermelho-Fighting-Red_0.webp",
@@ -435,22 +493,37 @@ const motos=[
  cores:[
   {nome:"Vermelho Fighting Red",img:HB+"2025-08/Imagem-Home-XR-300L-Tornado-Vermelho-Fighting-Red_0.webp"},
   {nome:"Preto Black",img:HB+"2025-08/Imagem-Home-XR-300L-Tornado-Preto_0.webp"}],
- fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","291,6 cc"],["Potência Máxima","26,1 cv a 8.500 rpm"],["Torque Máximo","2,61 kgf.m a 6.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","6 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","14 litros"],["Óleo do motor","2,0 litros"]],"Dimensões":[["Comprimento","2.195 mm"],["Altura do assento","895 mm"],["Peso seco","145 kg"],["Clearance","285 mm"]],"Ciclística":[["Freio dianteiro","Disco 276mm – ABS"],["Freio traseiro","Disco 220mm"],["Suspensão dianteira","Telescópica 43mm – curso 230mm"],["Pneu dianteiro","80/100-21"],["Pneu traseiro","100/100-18"]]}},
+ fichas:{
+  "Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","293,5 cc"],["Potência Máxima","24,3 cv (gas.) / 24,8 cv (etanol) a 7.500 rpm"],["Torque Máximo","2,70 kgf.m a 5.750 rpm"],["Transmissão","6 velocidades – Embreagem deslizante assistida"],["Sistema de Partida","Elétrica"],["Diâmetro x Curso","77,0 x 63,0 mm"],["Relação de Compressão","9,3:1"],["Sistema Alimentação","Injeção Eletrônica PGM-FI FlexOne"],["Combustível","Gasolina e/ou Etanol"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V – 5 Ah"],["Farol","LED"]],
+  "Capacidade":[["Tanque de Combustível","13,8 litros (res. 3,7 litros)"],["Óleo do Motor","2,0 litros (1,5 litros/troca)"]],
+  "Dimensões":[["Comprimento x Largura x Altura","2201 x 828 x 1298 mm"],["Distância entre eixos","1429 mm"],["Distância mínima do solo","268 mm"],["Altura do assento","890 mm"],["Peso Seco","143 kg"]],
+  "Chassi":[["Tipo","Semi berço duplo"],["Suspensão Dianteira/Curso","Garfo telescópico / 245 mm"],["Suspensão Traseira/Curso","Pro-Link / 227 mm"],["Freio Dianteiro/Diâmetro","A disco / 256 mm – ABS"],["Freio Traseiro/Diâmetro","A tambor / 220 mm"],["Pneu Dianteiro","90/90 - 21M/C 54S M+S"],["Pneu Traseiro","120/80 - 18M/C 62S M+S"]]}},
 
 {nome:"Tornado Special Edition",tipo:"Trail",lancamento:true,
  img:HB+"2026-02/Honda%20tornado%20vista%20lateral%20home_0.webp",
  url:WH+"xr300l-tornado-special-edition",
  cores:[{nome:"Edição Especial",img:HB+"2026-02/Honda%20tornado%20vista%20lateral%20home_0.webp"}],
- fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","291,6 cc"],["Potência Máxima","26,1 cv a 8.500 rpm"],["Torque Máximo","2,61 kgf.m a 6.500 rpm"],["Alimentação","Injeção Eletrônica PGM-FI – FlexOne"],["Transmissão","6 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","14 litros"]],"Dimensões":[["Altura do assento","895 mm"],["Peso seco","145 kg"],["Clearance","285 mm"]],"Ciclística":[["Freio dianteiro","Disco 276mm – ABS"],["Freio traseiro","Disco 220mm"],["Suspensão dianteira","Telescópica 43mm – curso 230mm"]]}},
+ fichas:{
+  "Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a ar"],["Cilindrada","293,5 cc"],["Potência Máxima","24,3 cv (gas.) / 24,8 cv (etanol) a 7.500 rpm"],["Torque Máximo","2,70 kgf.m a 5.750 rpm"],["Transmissão","6 velocidades – Embreagem deslizante assistida"],["Sistema de Partida","Elétrica"],["Sistema Alimentação","Injeção Eletrônica PGM-FI FlexOne"],["Combustível","Gasolina e/ou Etanol"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V – 5 Ah"],["Farol","LED"]],
+  "Capacidade":[["Tanque de Combustível","13,8 litros"],["Óleo do Motor","2,0 litros"]],
+  "Dimensões":[["Distância mínima do solo","268 mm"],["Altura do assento","890 mm"],["Peso Seco","143 kg"]],
+  "Chassi":[["Tipo","Semi berço duplo"],["Suspensão Dianteira/Curso","Garfo telescópico / 245 mm"],["Suspensão Traseira/Curso","Pro-Link / 227 mm"],["Freio Dianteiro/Diâmetro","A disco / 256 mm – ABS"],["Freio Traseiro/Diâmetro","A tambor / 220 mm"],["Pneu Dianteiro","90/90 - 21M/C 54S M+S"],["Pneu Traseiro","120/80 - 18M/C 62S M+S"]]}},
 
-/* ==================== ADVENTURE ==================== */
+// ==================== ADVENTURE ====================
 {nome:"NX 500",tipo:"Adventure",lancamento:true,
  img:HB+"2025-08/Imagem-home-honda-NX500-Vermelha-Lateral_0.webp",
  url:WH+"nx-500",
  cores:[
   {nome:"Vermelho Perolizado",img:HB+"2025-08/Imagem-home-honda-NX500-Vermelha-Lateral_0.webp"},
   {nome:"Preto Metálico",img:HB+"2025-08/Imagem-home-honda-NX500-Preta-Lateral_0.webp"}],
- fichas:{"Motor":[["Tipo","Bicilíndrico em linha, DOHC, arrefecido a água"],["Cilindrada","471 cc"],["Potência Máxima","50,2 cv a 9.500 rpm"],["Torque Máximo","4,56 kgf.m a 7.750 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","6 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","17,7 litros"]],"Dimensões":[["Altura do assento","820 mm"],["Peso seco","196 kg"],["Clearance","155 mm"]],"Ciclística":[["Freio dianteiro","Disco Dual – ABS Cornering"],["Freio traseiro","Disco – ABS"],["Suspensão dianteira","Telescópica invertida Showa 41mm"],["Controle de tração","Sim"],["Modos de pilotagem","Standard, Sport, Rain, Gravel"]]}},
+ fichas:{
+  "Motor":[["Tipo","Bicilíndrico em linha, DOHC, arrefecido a água"],["Cilindrada","471 cc"],["Potência Máxima","50,2 cv a 9.500 rpm"],["Torque Máximo","4,56 kgf.m a 7.750 rpm"],["Transmissão","6 velocidades"],["Sistema de Partida","Elétrica"],["Sistema Alimentação","Injeção Eletrônica PGM-FI"],["Combustível","Gasolina"],["Controle de tração","Sim (HSTC)"],["Modos de pilotagem","Standard, Sport, Rain, Gravel"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V – 8 Ah"],["Farol","LED"],["Painel","TFT 5 polegadas"]],
+  "Capacidade":[["Tanque de Combustível","17,7 litros"],["Óleo do Motor","~3,8 litros"]],
+  "Dimensões":[["Comprimento x Largura x Altura","2205 x 875 x 1335 mm"],["Distância entre eixos","1490 mm"],["Distância mínima do solo","155 mm"],["Altura do assento","820 mm"],["Peso Seco","196 kg"]],
+  "Chassi":[["Tipo","Duplo berço de aço"],["Suspensão Dianteira/Curso","Garfo invertido Showa 41mm / 120 mm"],["Suspensão Traseira/Curso","Mono Shock / 130 mm"],["Freio Dianteiro/Diâmetro","A disco dual / 310 mm – ABS Cornering"],["Freio Traseiro/Diâmetro","A disco / 240 mm – ABS"],["Pneu Dianteiro","120/70 ZR 17"],["Pneu Traseiro","160/60 ZR 17"]]}},
 
 {nome:"NC 750X",tipo:"Adventure",lancamento:true,
  img:HB+"2025-10/Lateral-v_0.webp",
@@ -458,7 +531,12 @@ const motos=[
  cores:[
   {nome:"Preto Metálico - Mat Gunpowder Black",img:HB+"2025-10/Lateral-v_0.webp"},
   {nome:"Cinza Metálico",img:HB+"2025-10/Lateral-v-cinza_0.webp"}],
- fichas:{"Motor":[["Tipo","Bicilíndrico em linha, SOHC, arrefecido a água"],["Cilindrada","745 cc"],["Potência Máxima","58,4 cv a 6.750 rpm"],["Torque Máximo","6,9 kgf.m a 4.750 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","6 marchas ou DCT (dupla embreagem)"],["Partida","Elétrica"]],"Capacidade":[["Tanque","14,1 litros"],["Porta-objetos dianteiro","21 litros"]],"Dimensões":[["Altura do assento","800 mm"],["Peso seco","217 kg (MT)"]],"Ciclística":[["Freio dianteiro","Disco Dual – ABS"],["Freio traseiro","Disco – ABS"],["Suspensão dianteira","Telescópica invertida Showa"],["Controle de tração (HSTC)","Sim"],["Modos de pilotagem","Standard, Sport, Rain, User"]]}},
+ fichas:{
+  "Motor":[["Tipo","Bicilíndrico em linha, SOHC, arrefecido a água"],["Cilindrada","745 cc"],["Potência Máxima","58,4 cv a 6.750 rpm"],["Torque Máximo","6,9 kgf.m a 4.750 rpm"],["Transmissão","6 marchas MT ou DCT (dupla embreagem)"],["Sistema de Partida","Elétrica"],["Sistema Alimentação","Injeção Eletrônica PGM-FI"],["Combustível","Gasolina"],["Controle de tração (HSTC)","Sim"],["Modos de pilotagem","Standard, Sport, Rain, User"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V"],["Farol","LED"],["Painel","TFT 5 polegadas"]],
+  "Capacidade":[["Tanque de Combustível","14,1 litros"],["Porta-objetos dianteiro","21 litros"],["Entrada USB","Sim"]],
+  "Dimensões":[["Comprimento x Largura x Altura","2215 x 870 x 1340 mm"],["Distância entre eixos","1525 mm"],["Altura do assento","800 mm"],["Peso Seco","217 kg (MT)"]],
+  "Chassi":[["Tipo","Duplo berço de aço"],["Suspensão Dianteira/Curso","Garfo invertido Showa / 150 mm"],["Suspensão Traseira/Curso","Mono Shock / 150 mm"],["Freio Dianteiro/Diâmetro","A disco dual / 320 mm – ABS"],["Freio Traseiro/Diâmetro","A disco / 240 mm – ABS"],["Pneu Dianteiro","120/70 ZR 17"],["Pneu Traseiro","160/60 ZR 17"]]}},
 
 {nome:"XL 750 Transalp",tipo:"Adventure",lancamento:true,
  img:HB+"2025-11/honda-transalp-vista-lateral-completa-da-motocicleta_0.webp",
@@ -466,21 +544,36 @@ const motos=[
  cores:[
   {nome:"Branco - Ross White",img:HB+"2025-11/honda-transalp-vista-lateral-completa-da-motocicleta_0.webp"},
   {nome:"Preto – Graphite Black",img:HB+"2025-11/honda-transalp-preta-vista-lateral-completa-da-motocicleta.webp"}],
- fichas:{"Motor":[["Tipo","Bicilíndrico em V paralelo, DOHC, arrefecido a água"],["Cilindrada","755 cc"],["Potência Máxima","91,7 cv a 9.500 rpm"],["Torque Máximo","75 Nm a 7.250 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","6 marchas"],["Partida","Elétrica"]],"Capacidade":[["Tanque","21 litros"],["Entrada USB","Sim"]],"Dimensões":[["Altura do assento","850 mm"],["Peso seco","208 kg"],["Clearance","210 mm"]],"Ciclística":[["Freio dianteiro","Disco Dual – ABS Cornering"],["Freio traseiro","Disco – ABS"],["Suspensão dianteira","Telescópica invertida Showa 43mm"],["Controle de tração (HSTC)","Sim"],["Modos","Tour, Urban, Gravel, Sport, User"],["Painel","TFT 5 polegadas – RoadSync"]]}},
+ fichas:{
+  "Motor":[["Tipo","Bicilíndrico em V paralelo, DOHC, arrefecido a água"],["Cilindrada","755 cc"],["Potência Máxima","91,7 cv a 9.500 rpm"],["Torque Máximo","75 Nm a 7.250 rpm"],["Transmissão","6 velocidades"],["Sistema de Partida","Elétrica"],["Sistema Alimentação","Injeção Eletrônica PGM-FI"],["Combustível","Gasolina"],["Controle de tração (HSTC)","Sim"],["Modos","Tour, Urban, Gravel, Sport, User"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V"],["Farol","LED"],["Painel","TFT 5 polegadas – RoadSync"]],
+  "Capacidade":[["Tanque de Combustível","21 litros"],["Entrada USB","Sim"]],
+  "Dimensões":[["Comprimento x Largura x Altura","2265 x 905 x 1385 mm"],["Distância entre eixos","1560 mm"],["Distância mínima do solo","210 mm"],["Altura do assento","850 mm"],["Peso Seco","208 kg"]],
+  "Chassi":[["Tipo","Duplo berço de aço"],["Suspensão Dianteira/Curso","Showa invertido 43mm / 200 mm"],["Suspensão Traseira/Curso","Showa Pro-Link / 190 mm"],["Freio Dianteiro/Diâmetro","A disco dual / 310 mm – ABS Cornering"],["Freio Traseiro/Diâmetro","A disco / 256 mm – ABS"],["Pneu Dianteiro","110/80 R 19"],["Pneu Traseiro","150/70 R 17"]]}},
 
 {nome:"Africa Twin MT",tipo:"Adventure",lancamento:true,
  img:HB+"2025-12/CRF1100L-Africa-Twin-MT-vista-lateralmente.webp",
  url:WH+"crf-1100l-african-twin",
  cores:[
   {nome:"Preto Fosco – Mat Ballistic Black Metallic",img:HB+"2025-12/CRF1100L-Africa-Twin-MT-vista-lateralmente.webp"}],
- fichas:{"Motor":[["Tipo","Bicilíndrico em linha, SOHC, arrefecido a água"],["Cilindrada","1.084 cc"],["Potência Máxima","101,7 cv a 7.500 rpm"],["Torque Máximo","10,5 kgf.m a 6.250 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","6 marchas – Manual (MT)"],["Partida","Elétrica"]],"Capacidade":[["Tanque","18,8 litros"],["USB-C","Sim"]],"Dimensões":[["Altura do assento","850/870 mm"],["Peso seco","226 kg"],["Clearance","250 mm"]],"Ciclística":[["Freio dianteiro","Disco Dual 310mm – ABS Cornering"],["Freio traseiro","Disco 256mm – ABS"],["Suspensão dianteira","Telescópica invertida Showa 45mm – 230mm"],["HSTC (controle de tração)","Sim"],["Modos","Tour, Urban, Enduro, Gravel, User"],["Painel","TFT 6,5 polegadas – Apple CarPlay"]]}},
+ fichas:{
+  "Motor":[["Tipo","Bicilíndrico em linha, SOHC, arrefecido a água"],["Cilindrada","1.084 cc"],["Potência Máxima","101,7 cv a 7.500 rpm"],["Torque Máximo","10,5 kgf.m a 6.250 rpm"],["Transmissão","6 marchas – Manual (MT)"],["Sistema de Partida","Elétrica"],["Sistema Alimentação","Injeção Eletrônica PGM-FI"],["Combustível","Gasolina"],["Modos","Tour, Urban, Enduro, Gravel, User"],["Controle de tração (HSTC)","Sim"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V"],["Farol","LED"],["Painel","TFT 6,5 polegadas – Apple CarPlay"]],
+  "Capacidade":[["Tanque de Combustível","18,8 litros"],["Entrada USB-C","Sim"]],
+  "Dimensões":[["Comprimento x Largura x Altura","2310 x 935 x 1455 mm"],["Distância entre eixos","1575 mm"],["Distância mínima do solo","250 mm"],["Altura do assento","850 / 870 mm"],["Peso Seco","226 kg"]],
+  "Chassi":[["Tipo","Duplo berço de aço"],["Suspensão Dianteira/Curso","Showa invertido 45mm / 230 mm"],["Suspensão Traseira/Curso","Pro-Link / 220 mm"],["Freio Dianteiro/Diâmetro","A disco dual / 310 mm – ABS Cornering"],["Freio Traseiro/Diâmetro","A disco / 256 mm – ABS"],["Pneu Dianteiro","90/90 – 21 M+S"],["Pneu Traseiro","150/70 R 18 M+S"]]}},
 
 {nome:"Africa Twin DCT ES",tipo:"Adventure",lancamento:true,
  img:HB+"2025-12/CRF1100L%20Africa%20Twin%20Adventure%20Sports%20DCT%20ES%20vista%20lateralmente_0.webp",
  url:WH+"africa-twin",
  cores:[
   {nome:"Branco Perolizado - Pearl Glare White",img:HB+"2025-12/CRF1100L-Africa-Twin-DCT-ES-vista-lateralmente.webp"}],
- fichas:{"Motor":[["Tipo","Bicilíndrico em linha, SOHC, arrefecido a água"],["Cilindrada","1.084 cc"],["Potência Máxima","101,7 cv a 7.500 rpm"],["Torque Máximo","10,5 kgf.m a 6.250 rpm"],["Transmissão","DCT – Dupla Embreagem Automática"],["Partida","Elétrica"]],"Capacidade":[["Tanque","18,8 litros"],["USB-C","Sim"]],"Dimensões":[["Altura do assento","850/870 mm"],["Peso seco","231 kg"],["Clearance","250 mm"]],"Ciclística":[["Freio dianteiro","Disco Dual 310mm – ABS Cornering"],["Freio traseiro","Disco 256mm – ABS"],["DCT","Troca automática de marchas"],["HSTC","Sim"],["Modos","Tour, Urban, Enduro, Gravel, User"],["Painel","TFT 6,5 polegadas – Apple CarPlay"]]}},
+ fichas:{
+  "Motor":[["Tipo","Bicilíndrico em linha, SOHC, arrefecido a água"],["Cilindrada","1.084 cc"],["Potência Máxima","101,7 cv a 7.500 rpm"],["Torque Máximo","10,5 kgf.m a 6.250 rpm"],["Transmissão","DCT – Dupla Embreagem Automática"],["Sistema de Partida","Elétrica"],["Sistema Alimentação","Injeção Eletrônica PGM-FI"],["Combustível","Gasolina"],["Modos","Tour, Urban, Enduro, Gravel, User"],["Controle de tração (HSTC)","Sim"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V"],["Farol","LED"],["Painel","TFT 6,5 polegadas – Apple CarPlay"]],
+  "Capacidade":[["Tanque de Combustível","18,8 litros"],["Entrada USB-C","Sim"]],
+  "Dimensões":[["Comprimento x Largura x Altura","2310 x 935 x 1455 mm"],["Distância entre eixos","1575 mm"],["Distância mínima do solo","250 mm"],["Altura do assento","850 / 870 mm"],["Peso Seco","231 kg"]],
+  "Chassi":[["Tipo","Duplo berço de aço"],["Suspensão Dianteira/Curso","Showa invertido 45mm / 230 mm"],["Suspensão Traseira/Curso","Pro-Link / 220 mm"],["Freio Dianteiro/Diâmetro","A disco dual / 310 mm – ABS Cornering"],["Freio Traseiro/Diâmetro","A disco / 256 mm – ABS"],["DCT","Troca automática de marchas"],["Pneu Dianteiro","90/90 – 21 M+S"],["Pneu Traseiro","150/70 R 18 M+S"]]}},
 
 {nome:"Africa Twin Adv. Sports DCT ES",tipo:"Adventure",lancamento:true,
  img:HB+"2025-12/CRF1100L%20Africa%20Twin%20Adventure%20Sports%20DCT%20ES%20vista%20lateralmente_0.webp",
@@ -488,20 +581,35 @@ const motos=[
  cores:[
   {nome:"Branco Perolizado - Pearl Glare White",img:HB+"2025-12/CRF1100L%20Africa%20Twin%20Adventure%20Sports%20DCT%20ES%20vista%20lateralmente.webp"},
   {nome:"Cinza Fosco - Mat Iridium Gray Metallic",img:HB+"2025-12/Home%20-%20860x550%20-%20PNG.webp"}],
- fichas:{"Motor":[["Tipo","Bicilíndrico em linha, SOHC, arrefecido a água"],["Cilindrada","1.084 cc"],["Potência Máxima","101,7 cv a 7.500 rpm"],["Torque Máximo","10,5 kgf.m a 6.250 rpm"],["Transmissão","DCT – Dupla Embreagem Automática"],["Partida","Elétrica"]],"Capacidade":[["Tanque","24,8 litros (maior autonomia)"],["USB-C","Sim"]],"Dimensões":[["Altura do assento","855/875 mm"],["Peso seco","242 kg"],["Clearance","250 mm"]],"Ciclística":[["Freio dianteiro","Disco Dual 310mm – ABS Cornering"],["Freio traseiro","Disco 256mm – ABS"],["DCT","Troca automática de marchas"],["HSTC","Sim"],["Modos","Tour, Urban, Enduro, Gravel, User"],["Painel","TFT 6,5 polegadas – Apple CarPlay"]]}},
+ fichas:{
+  "Motor":[["Tipo","Bicilíndrico em linha, SOHC, arrefecido a água"],["Cilindrada","1.084 cc"],["Potência Máxima","101,7 cv a 7.500 rpm"],["Torque Máximo","10,5 kgf.m a 6.250 rpm"],["Transmissão","DCT – Dupla Embreagem Automática"],["Sistema de Partida","Elétrica"],["Sistema Alimentação","Injeção Eletrônica PGM-FI"],["Combustível","Gasolina"],["Modos","Tour, Urban, Enduro, Gravel, User"],["Controle de tração (HSTC)","Sim"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V"],["Farol","LED"],["Painel","TFT 6,5 polegadas – Apple CarPlay"]],
+  "Capacidade":[["Tanque de Combustível","24,8 litros (maior autonomia)"],["Entrada USB-C","Sim"]],
+  "Dimensões":[["Comprimento x Largura x Altura","2330 x 972 x 1470 mm"],["Distância entre eixos","1575 mm"],["Distância mínima do solo","250 mm"],["Altura do assento","855 / 875 mm"],["Peso Seco","242 kg"]],
+  "Chassi":[["Tipo","Duplo berço de aço"],["Suspensão Dianteira/Curso","Showa invertido 45mm / 230 mm"],["Suspensão Traseira/Curso","Pro-Link / 220 mm"],["Freio Dianteiro/Diâmetro","A disco dual / 310 mm – ABS Cornering"],["Freio Traseiro/Diâmetro","A disco / 256 mm – ABS"],["DCT","Troca automática de marchas"],["Pneu Dianteiro","90/90 – 21 M+S"],["Pneu Traseiro","150/70 R 18 M+S"]]}},
 
-/* ==================== OFF ROAD ==================== */
+// ==================== OFF ROAD ====================
 {nome:"CRF 300F",tipo:"Off Road",lancamento:true,
  img:HB+"2025-08/Imagem-Home-Honda-CRF-300F-Vermelho-Extreme-Red_0.webp",
  url:WH+"crf-300f",
  cores:[{nome:"Vermelho Extreme Red",img:HB+"2025-08/Imagem-Home-Honda-CRF-300F-Vermelho-Extreme-Red_0.webp"}],
- fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a água"],["Cilindrada","286 cc"],["Potência Máxima","27,3 cv a 8.500 rpm"],["Torque Máximo","2,78 kgf.m a 6.750 rpm"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","6 marchas"],["Partida","Elétrica + Kick"]],"Capacidade":[["Tanque","9,3 litros"],["Óleo do motor","1,5 litro"]],"Dimensões":[["Comprimento","2.165 mm"],["Altura do assento","890 mm"],["Peso seco","137 kg"],["Clearance","295 mm"]],"Ciclística":[["Freio dianteiro","Disco 260mm – ABS (1 canal)"],["Freio traseiro","Disco 240mm"],["Suspensão dianteira","Telescópica invertida Showa 49mm – 300mm"],["Suspensão traseira","Pro-Link Showa – 305mm"],["Pneu dianteiro","80/100-21"],["Pneu traseiro","100/100-18"]]}},
+ fichas:{
+  "Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a água"],["Cilindrada","286 cc"],["Potência Máxima","27,3 cv a 8.500 rpm"],["Torque Máximo","2,78 kgf.m a 6.750 rpm"],["Transmissão","6 velocidades"],["Sistema de Partida","Elétrica + Kick"],["Sistema Alimentação","Injeção Eletrônica PGM-FI"],["Combustível","Gasolina"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V"],["Farol","LED"]],
+  "Capacidade":[["Tanque de Combustível","9,3 litros"],["Óleo do Motor","1,5 litro"]],
+  "Dimensões":[["Comprimento x Largura x Altura","2165 x 832 x 1270 mm"],["Distância entre eixos","1476 mm"],["Distância mínima do solo","295 mm"],["Altura do assento","890 mm"],["Peso Seco","137 kg"]],
+  "Chassi":[["Tipo","Semi berço de aço"],["Suspensão Dianteira/Curso","Showa invertido 49mm / 300 mm"],["Suspensão Traseira/Curso","Pro-Link Showa / 305 mm"],["Freio Dianteiro/Diâmetro","A disco / 260 mm – ABS (1 canal)"],["Freio Traseiro/Diâmetro","A disco / 240 mm"],["Pneu Dianteiro","80/100-21"],["Pneu Traseiro","100/100-18"]]}},
 
 {nome:"TRX 420 FourTrax",tipo:"Off Road",lancamento:false,
  img:HB+"2025-08/TRX%20Vermelha%202023%20Cor%20Eixo_lateral.webp",
  url:WH+"trx-420-fourtrax",
  cores:[{nome:"Vermelho Fighting Red",img:HB+"2025-08/TRX%20Vermelha%202023%20Cor%20Eixo_lateral.webp"}],
- fichas:{"Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a água"],["Cilindrada","420 cc"],["Potência Máxima","(Uso off-road)"],["Alimentação","Injeção Eletrônica PGM-FI"],["Transmissão","5 marchas semi-automáticas + Ré"],["Partida","Elétrica"]],"Capacidade":[["Tanque","15,0 litros"]],"Dimensões":[["Comprimento","1.870 mm"],["Largura","1.160 mm"],["Peso seco","278 kg"],["Altura do assento","840 mm"]],"Ciclística":[["Tração","2x4 / 4x4 selecionável"],["Freio dianteiro","Disco hidráulico"],["Freio traseiro","Tambor"],["Suspensão dianteira","Independente – curso 165mm"],["Suspensão traseira","Swing Arm – curso 185mm"]]}}
+ fichas:{
+  "Motor":[["Tipo","OHC, Monocilíndrico, 4 tempos, arrefecido a água"],["Cilindrada","420 cc"],["Transmissão","5 marchas semi-automáticas + Ré"],["Sistema de Partida","Elétrica"],["Sistema Alimentação","Injeção Eletrônica PGM-FI"],["Combustível","Gasolina"]],
+  "Sistema elétrico":[["Ignição","Eletrônica"],["Bateria","12V"],["Farol","35 W"]],
+  "Capacidade":[["Tanque de Combustível","15,0 litros"]],
+  "Dimensões":[["Comprimento x Largura x Altura","1870 x 1160 x 1220 mm"],["Distância entre eixos","1240 mm"],["Distância mínima do solo","270 mm"],["Altura do assento","840 mm"],["Peso Seco","278 kg"]],
+  "Chassi":[["Tipo","Duplo berço de aço"],["Tração","2x4 / 4x4 selecionável"],["Suspensão Dianteira/Curso","Duplo A independente / 165 mm"],["Suspensão Traseira/Curso","Swing Arm / 185 mm"],["Freio Dianteiro/Diâmetro","A disco hidráulico"],["Freio Traseiro/Diâmetro","A tambor"],["Pneu Dianteiro","24 x 8 – 11"],["Pneu Traseiro","24 x 10 – 11"]]}}
 ];
 
 let currentCat='todos';
@@ -534,7 +642,7 @@ function openModal(idx){
   document.getElementById('mColors').innerHTML=m.cores.map((c,i)=>`<div class="color-opt ${i===0?'active':''}" onclick="selectColor(this,'${c.img}')"><img src="${c.img}" alt="${c.nome}" onerror="this.style.display='none'"><span>${c.nome}</span></div>`).join('');
   const tabs=Object.keys(m.fichas);
   document.getElementById('specTabs').innerHTML=tabs.map((t,i)=>`<button class="spec-tab ${i===0?'active':''}" onclick="showSpec('${t}',this)">${t}</button>`).join('');
-  document.getElementById('specPanels').innerHTML=tabs.map((t,i)=>`<div class="spec-panel ${i===0?'active':''}" id="spec-${t}"><table class="spec-table">${m.fichas[t].map(([k,v])=>`<tr><td>${k}</td><td>${v}</td></tr>`).join('')}</table></div>`).join('');
+  document.getElementById('specPanels').innerHTML=tabs.map((t,i)=>`<div class="spec-panel ${i===0?'active':''}" id="spec-${CSS.escape(t)}"><table class="spec-table">${m.fichas[t].map(([k,v])=>`<tr><td>${k}</td><td>${v}</td></tr>`).join('')}</table></div>`).join('');
   const msg=encodeURIComponent(`Olá Amanda! Vi seu portfólio e tenho interesse na ${m.nome}. Pode me passar mais informações e condições?`);
   document.getElementById('mWppBtn').href=`https://wa.me/${WPP}?text=${msg}`;
   document.getElementById('mWinnerBtn').href=m.url;
@@ -553,7 +661,7 @@ function showSpec(name,btn){
   document.querySelectorAll('.spec-tab').forEach(t=>t.classList.remove('active'));
   document.querySelectorAll('.spec-panel').forEach(p=>p.classList.remove('active'));
   btn.classList.add('active');
-  document.getElementById('spec-'+name).classList.add('active');
+  document.getElementById('spec-'+CSS.escape(name)).classList.add('active');
 }
 function togglePay(id){document.getElementById(id).classList.toggle('open');}
 function closeModal(){document.getElementById('modalOverlay').classList.remove('active');document.body.style.overflow='';}
